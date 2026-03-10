@@ -28,6 +28,11 @@
         "type": "hook",
         "name": "user-sound-like-hook",
         "source": "src/hooks/userSoundLike/index.ts"
+      },
+      {
+        "type": "hook",
+        "name": "user-hook",
+        "source": "src/hooks/user/index.ts"
       }
     ],
     "host": "^10.10.0"
