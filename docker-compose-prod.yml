@@ -8,6 +8,8 @@ services:
     command: sh -c "npm install && npm run build"
 
   directus:
+    ports:
+      - 8055:8055
     image: 'directus/directus:11.17.0'
     volumes:
       - ./uploads:/directus/uploads
