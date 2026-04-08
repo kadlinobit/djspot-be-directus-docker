@@ -1,7 +1,6 @@
 import { defineHook } from '@directus/extensions-sdk';
-import { createError } from '@directus/errors';
 
-export default defineHook(({ filter }, { services }) => {
+export default defineHook(({ filter }, { services, exceptions }: any) => {
   const { AuthenticationService } = services;
 
   filter(
@@ -17,12 +16,7 @@ export default defineHook(({ filter }, { services }) => {
       }
 
       if (!input.password_check) {
-        const InvalidCredentialsException = createError(
-          'INVALID_CREDENTIALS',
-          'Invalid credentials',
-          401
-        );
-        throw new InvalidCredentialsException();
+        throw new exceptions.InvalidCredentialsException();
       }
 
       const authService = new AuthenticationService({
@@ -34,12 +28,7 @@ export default defineHook(({ filter }, { services }) => {
       try {
         await authService.verifyPassword(accountability.user, input.password_check);
       } catch (error) {
-        const InvalidCredentialsException = createError(
-          'INVALID_CREDENTIALS',
-          'Invalid credentials',
-          401
-        );
-        throw new InvalidCredentialsException();
+        throw new exceptions.InvalidCredentialsException();
       }
 
       delete input.password_check;

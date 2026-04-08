@@ -1,0 +1,97 @@
+services:
+  builder:
+    image: node:24-alpine
+    volumes:
+      - ./extensions/djspot-core:/extension
+    working_dir: /extension
+    command: sh -c "npm install && npm run build"
+
+  directus:
+    image: 'directus/directus:11.17.0'
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+      - ./snapshots:/directus/snapshots
+    environment:
+      - SERVICE_URL_DIRECTUS_8055
+      - KEY=$SERVICE_BASE64_64_KEY
+      - SECRET=$SERVICE_BASE64_64_SECRET
+      - 'ADMIN_EMAIL=${ADMIN_EMAIL:-admin@example.com}'
+      - ADMIN_PASSWORD=$SERVICE_PASSWORD_ADMIN
+      - DB_CLIENT=mysql
+      - DB_HOST=mariadb
+      - DB_PORT=3306
+      - 'DB_DATABASE=${MARIADB_DATABASE:-directus}'
+      - DB_USER=$SERVICE_USER_MARIADB
+      - DB_PASSWORD=$SERVICE_PASSWORD_MARIADB
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - WEBSOCKETS_ENABLED=true
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - '-q'
+        - '--spider'
+        - 'http://127.0.0.1:8055/admin/login'
+      interval: 5s
+      timeout: 20s
+      retries: 10
+    depends_on:
+      builder:
+        condition: service_completed_successfully
+      mariadb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  mariadb:
+    image: 'mariadb:11.8.3'
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_uca1400_ai_ci
+    volumes:
+      - 'directus-mariadb-data:/var/lib/mysql'
+    environment:
+      - 'MYSQL_ROOT_PASSWORD=${SERVICE_PASSWORD_MARIADB}'
+      - 'MYSQL_USER=${SERVICE_USER_MARIADB}'
+      - 'MYSQL_PASSWORD=${SERVICE_PASSWORD_MARIADB}'
+      - 'MYSQL_DATABASE=${MARIADB_DATABASE:-directus}'
+    healthcheck:
+      test:
+        - CMD
+        - healthcheck.sh
+        - '--su-mysql'
+        - '--connect'
+        - '--innodb_initialized'
+      interval: 5s
+      timeout: 20s
+      retries: 10
+
+  redis:
+    image: 'redis:7-alpine'
+    command: 'redis-server --appendonly yes'
+    volumes:
+      - 'directus-redis-data:/data'
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 5s
+      timeout: 20s
+      retries: 10
+
+  schema-applier:
+    image: 'directus/directus:11.17.0'
+    volumes:
+      - ./snapshots:/directus/snapshots
+    environment:
+      - DB_CLIENT=mysql
+      - DB_HOST=mariadb
+      - DB_PORT=3306
+      - 'DB_DATABASE=${MARIADB_DATABASE:-directus}'
+      - DB_USER=$SERVICE_USER_MARIADB
+      - DB_PASSWORD=$SERVICE_PASSWORD_MARIADB
+    command: npx directus schema apply --yes ./snapshots/latest-schema.yaml
+    depends_on:
+      directus:
+        condition: service_healthy

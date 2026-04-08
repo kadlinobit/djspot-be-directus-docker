@@ -1,6 +1,5 @@
 import { defineHook } from '@directus/extensions-sdk';
 import type { Filter } from '@directus/types';
-import { createError } from '@directus/errors';
 
 interface ICreateFollowPayload {
   dj: string;
@@ -8,7 +7,7 @@ interface ICreateFollowPayload {
 
 type IDeleteFollowPayload = Array<number>;
 
-export default defineHook(async ({ filter, action }, { services }) => {
+export default defineHook(async ({ filter, action }, { services, exceptions }: any) => {
   const { ItemsService } = services;
 
   filter<ICreateFollowPayload | undefined>(
@@ -33,12 +32,7 @@ export default defineHook(async ({ filter, action }, { services }) => {
       });
 
       if (results.length > 0) {
-        const ForbiddenError = createError(
-          'UNPROCESSABLE_CONTENT',
-          'You cant follow DJ more than once',
-          422,
-        );
-        throw new ForbiddenError();
+        throw new exceptions.InvalidPayloadException('You cant follow DJ more than once');
       }
       return input;
     },
@@ -68,12 +62,7 @@ export default defineHook(async ({ filter, action }, { services }) => {
             follow_count: dj.follow_count - 1,
           });
         } catch (error: any) {
-          const UnknownError = createError(
-            'INTERNAL_SERVER_ERROR',
-            error?.message || 'Internal server error',
-            500,
-          );
-          throw new UnknownError();
+          throw new Error(error?.message || 'Internal server error');
         }
       }
 
