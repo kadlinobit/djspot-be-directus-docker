@@ -1,6 +1,7 @@
 services:
     builder:
         image: node:24-alpine
+        restart: "no"
         volumes:
         - ./extensions/djspot-core:/extension
         working_dir: /extension
@@ -54,6 +55,7 @@ services:
 
     schema-applier:
         image: directus/directus:11.17.0
+        restart: "no"
         volumes:
             - ./snapshots:/directus/snapshots
         environment:
