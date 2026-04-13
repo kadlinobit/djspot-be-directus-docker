@@ -19,14 +19,14 @@ services:
       - SERVICE_URL_DIRECTUS_8055
       - KEY=${SERVICE_BASE64_64_KEY}
       - SECRET=${SERVICE_BASE64_64_SECRET}
-      - ADMIN_EMAIL=${ADMIN_EMAIL:-admin@example.com}
-      - ADMIN_PASSWORD=${SERVICE_PASSWORD_ADMIN:-pass}
+      - ADMIN_EMAIL=${DIRECTUS_EMAIL_ADMIN:-admin@example.com}
+      - ADMIN_PASSWORD=${DIRECTUS_PASSWORD_ADMIN:-pass}
       - DB_CLIENT=mysql
       - DB_HOST=mariadb
       - DB_PORT=3306
       - DB_DATABASE=${MARIADB_DATABASE:-directus}
-      - DB_USER=${SERVICE_USER_MARIADB}
-      - DB_PASSWORD=${SERVICE_PASSWORD_MARIADB}
+      - DB_USER=${MARIADB_USER}
+      - DB_PASSWORD=${MARIADB_PASSWORD}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - WEBSOCKETS_ENABLED=true
@@ -54,9 +54,9 @@ services:
     volumes:
       - 'directus-mariadb-data:/var/lib/mysql'
     environment:
-      - 'MYSQL_ROOT_PASSWORD=${SERVICE_PASSWORD_MARIADB}'
-      - 'MYSQL_USER=${SERVICE_USER_MARIADB}'
-      - 'MYSQL_PASSWORD=${SERVICE_PASSWORD_MARIADB}'
+      - 'MYSQL_ROOT_PASSWORD=${MARIADB_PASSWORD}'
+      - 'MYSQL_USER=${MARIADB_USER}'
+      - 'MYSQL_PASSWORD=${MARIADB_PASSWORD}'
       - 'MYSQL_DATABASE=${MARIADB_DATABASE:-directus}'
     healthcheck:
       test:
@@ -93,8 +93,8 @@ services:
       - DB_HOST=mariadb
       - DB_PORT=3306
       - DB_DATABASE=${MARIADB_DATABASE:-directus}
-      - DB_USER=${SERVICE_USER_MARIADB}
-      - DB_PASSWORD=${SERVICE_PASSWORD_MARIADB}
+      - DB_USER=${MARIADB_USER}
+      - DB_PASSWORD=${MARIADB_PASSWORD}
     command: npx directus schema apply --yes ./snapshots/latest-schema.yaml
     depends_on:
       directus:
