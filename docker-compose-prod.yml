@@ -24,7 +24,7 @@ services:
       - DB_CLIENT=mysql
       - DB_HOST=mariadb
       - DB_PORT=3306
-      - 'DB_DATABASE=${MARIADB_DATABASE:-directus}'
+      - DB_DATABASE=${MARIADB_DATABASE:-directus}
       - DB_USER=${SERVICE_USER_MARIADB}
       - DB_PASSWORD=${SERVICE_PASSWORD_MARIADB}
       - REDIS_HOST=redis
