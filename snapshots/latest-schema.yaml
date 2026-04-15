@@ -225,8 +225,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -452,14 +452,14 @@ fields:
       conditions: null
       display: related-values
       display_options:
-        template: "DJ {{name}}"
+        template: "DJ\_{{name}}"
       field: djs
       group: null
       hidden: false
       interface: list-o2m
       note: null
       options:
-        template: "DJ {{name}}"
+        template: "DJ\_{{name}}"
       readonly: false
       required: false
       searchable: true
@@ -949,7 +949,7 @@ fields:
       interface: select-dropdown-m2o
       note: null
       options:
-        template: "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+        template: "{{avatar.$thumbnail}}\_{{first_name}}\_{{last_name}}"
       readonly: false
       required: false
       searchable: true
@@ -1127,8 +1127,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: true
       is_unique: false
       is_indexed: true
@@ -1168,8 +1168,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -1229,14 +1229,14 @@ fields:
       conditions: null
       display: related-values
       display_options:
-        template: "{{id}} - {{name}}"
+        template: "{{id}}\_-\_{{name}}"
       field: genre_id
       group: null
       hidden: false
       interface: select-dropdown-m2o
       note: null
       options:
-        template: "{{id}} - {{name}}"
+        template: "{{id}}\_-\_{{name}}"
       readonly: false
       required: false
       searchable: true
@@ -1252,8 +1252,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: true
       is_unique: false
       is_indexed: true
@@ -1293,8 +1293,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -2059,8 +2059,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -2139,8 +2139,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: true
       is_unique: false
       is_indexed: true
@@ -2180,8 +2180,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -2290,7 +2290,7 @@ fields:
       note: null
       options:
         enableLink: true
-        template: "DJ {{name}}"
+        template: "DJ\_{{name}}"
       readonly: false
       required: false
       searchable: true
@@ -2348,8 +2348,8 @@ fields:
       data_type: uuid
       default_value: null
       max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
+      numeric_precision: null
+      numeric_scale: null
       is_nullable: false
       is_unique: true
       is_indexed: false
@@ -2451,7 +2451,7 @@ fields:
       conditions: null
       display: related-values
       display_options:
-        template: "DJ {{dj.name}} - {{name}}"
+        template: "DJ\_{{dj.name}}\_-\_{{name}}"
       field: sound
       group: null
       hidden: false
