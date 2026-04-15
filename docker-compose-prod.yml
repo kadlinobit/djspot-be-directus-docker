@@ -91,7 +91,7 @@ services:
     command: >
       sh -c '
       npx directus schema apply --yes ./snapshots/latest-schema.yaml &&
-      npx -y directus-sync --directus-url http://directus:8055 --directus-email $$ADMIN_EMAIL --directus-password $$ADMIN_PASSWORD push --force --no-snapshot
+      npx -y directus-sync --directus-url http://directus:8055 --directus-email $$ADMIN_EMAIL --directus-password $$ADMIN_PASSWORD --config-path ./directus-sync.config.cjs push --force --no-snapshot
       '
     depends_on:
       directus:
