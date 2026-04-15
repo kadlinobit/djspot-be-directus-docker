@@ -1,0 +1,30 @@
+{
+  "collection": "sound",
+  "field": "genres",
+  "meta": {
+    "collection": "sound",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "genres",
+    "group": null,
+    "hidden": false,
+    "interface": "list-m2m",
+    "note": null,
+    "options": {
+      "enableCreate": false
+    },
+    "readonly": false,
+    "required": true,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "m2m"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "type": "alias"
+}

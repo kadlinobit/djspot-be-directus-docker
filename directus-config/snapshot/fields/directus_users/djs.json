@@ -1,0 +1,32 @@
+{
+  "collection": "directus_users",
+  "field": "djs",
+  "meta": {
+    "collection": "directus_users",
+    "conditions": null,
+    "display": "related-values",
+    "display_options": {
+      "template": "DJ {{name}}"
+    },
+    "field": "djs",
+    "group": null,
+    "hidden": false,
+    "interface": "list-o2m",
+    "note": null,
+    "options": {
+      "template": "DJ {{name}}"
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "o2m"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "type": "alias"
+}

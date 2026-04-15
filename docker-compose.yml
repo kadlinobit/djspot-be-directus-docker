@@ -1,11 +1,19 @@
 services:
-    builder:
-        image: node:24-alpine
-        restart: "no"
+    # builder:
+    #     image: node:24-alpine
+    #     restart: "no"
+    #     volumes:
+    #     - ./extensions/djspot-core:/extension
+    #     working_dir: /extension
+    #     command: sh -c "npm install && npm run build"
+    database:
+        image: postgis/postgis:16-3.4
         volumes:
-        - ./extensions/djspot-core:/extension
-        working_dir: /extension
-        command: sh -c "npm install && npm run build"
+        - ./postgres_data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: directus
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: directus
     mariadb:
         image: mariadb:11.8.3
         command: --character-set-server=utf8mb4 --collation-server=utf8mb4_uca1400_ai_ci
@@ -17,25 +25,43 @@ services:
         volumes:
             - ./mariadb_data:/var/lib/mysql
     directus:
-        image: directus/directus:11.17.0
+        # DIRECT IMAGE
+        # image: directus/directus:11.17.1
+
+        # CUSTOM IMAGE
+        build:
+            context: .
+            dockerfile: Dockerfile
         ports:
             - 8055:8055
         volumes:
             - ./uploads:/directus/uploads
-            - ./extensions:/directus/extensions
             - ./snapshots:/directus/snapshots
+            # FOR DEVELOPMENT ONLY: 
+            # Mounting extensions disk for hot-reload of extensions
+            - ./extensions/djspot-core:/directus/extensions/djspot-core
         environment:
             PUBLIC_URL: "http://localhost:3000"
             KEY: "2985a8f6-aba3-45ab-8c1b-f36599896125"
             SECRET: "Xmakb8JqJNCqPZsybNL3RHOsMxrPMwX-"
             ADMIN_EMAIL: "admin@example.com"
             ADMIN_PASSWORD: "pass"
-            DB_CLIENT: "mysql"
-            DB_HOST: "mariadb"
-            DB_PORT: "3306"
+            # MARIADB VERSION
+            # DB_CLIENT: "mysql"
+            # DB_HOST: "mariadb"
+            # DB_PORT: "3306"
+            # DB_DATABASE: "directus"
+            # DB_USER: "root"
+            # DB_PASSWORD: "secret"
+
+            # POSTGRES VERSION
+            DB_CLIENT: "pg"
+            DB_HOST: "database"
+            DB_PORT: "5432"
             DB_DATABASE: "directus"
-            DB_USER: "root"
-            DB_PASSWORD: "secret"
+            DB_USER: "directus"
+            DB_PASSWORD: "password"
+
             WEBSOCKETS_ENABLED: "true"
             EXTENSIONS_AUTO_RELOAD: true
             DIRECTUS_EXTENSIONS_PATH: /directus/extensions/
@@ -49,26 +75,26 @@ services:
             interval: 5s
             timeout: 20s
             retries: 10
-        depends_on:
-            builder:
-                condition: service_completed_successfully
+        # depends_on:
+        #     builder:
+        #         condition: service_completed_successfully
 
-    schema-applier:
-        image: directus/directus:11.17.0
-        restart: "no"
-        volumes:
-            - ./snapshots:/directus/snapshots
-        environment:
-            DB_CLIENT: "mysql"
-            DB_HOST: "mariadb"
-            DB_PORT: "3306"
-            DB_DATABASE: "directus"
-            DB_USER: "root"
-            DB_PASSWORD: "secret"
-        command: npx directus schema apply --yes ./snapshots/latest-schema.yaml
-        depends_on:
-            directus:
-                condition: service_healthy
+    # schema-applier:
+    #     image: directus/directus:11.17.2
+    #     restart: "no"
+    #     volumes:
+    #         - ./snapshots:/directus/snapshots
+    #     environment:
+    #         DB_CLIENT: "mysql"
+    #         DB_HOST: "mariadb"
+    #         DB_PORT: "3306"
+    #         DB_DATABASE: "directus"
+    #         DB_USER: "root"
+    #         DB_PASSWORD: "secret"
+    #     command: npx directus schema apply --yes ./snapshots/latest-schema.yaml
+    #     depends_on:
+    #         directus:
+    #             condition: service_healthy
 
     mailpit:
         image: axllent/mailpit

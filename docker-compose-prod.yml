@@ -1,16 +1,8 @@
 services:
-  builder:
-    image: node:24-alpine
-    restart: "no"
-    volumes:
-      - ./extensions/djspot-core:/extension
-    working_dir: /extension
-    command: sh -c "npm install && npm run build"
-
   directus:
     ports:
       - 8055:8055
-    image: 'directus/directus:11.17.0'
+    image: 'directus/directus:11.17.2'
     volumes:
       - ./uploads:/directus/uploads
       - ./extensions:/directus/extensions
@@ -21,12 +13,12 @@ services:
       - SECRET=${SERVICE_BASE64_64_SECRET}
       - ADMIN_EMAIL=${DIRECTUS_EMAIL_ADMIN:-admin@example.com}
       - ADMIN_PASSWORD=${DIRECTUS_PASSWORD_ADMIN:-pass}
-      - DB_CLIENT=mysql
-      - DB_HOST=mariadb
-      - DB_PORT=3306
-      - DB_DATABASE=${MARIADB_DATABASE:-directus}
-      - DB_USER=${MARIADB_USER}
-      - DB_PASSWORD=${MARIADB_PASSWORD}
+      - DB_CLIENT=pg
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_DATABASE=${DB_DATABASE:-directus}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - WEBSOCKETS_ENABLED=true
@@ -41,30 +33,27 @@ services:
       timeout: 20s
       retries: 10
     depends_on:
-      builder:
-        condition: service_completed_successfully
-      mariadb:
+      database:
         condition: service_healthy
       redis:
         condition: service_healthy
 
-  mariadb:
-    image: 'mariadb:11.8.3'
-    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_uca1400_ai_ci
+  database:
+    image: 'postgis/postgis:16-3.4'
     volumes:
-      - 'directus-mariadb-data:/var/lib/mysql'
+      - 'directus-postgres-data:/var/lib/postgresql/data'
     environment:
-      - 'MYSQL_ROOT_PASSWORD=${MARIADB_PASSWORD}'
-      - 'MYSQL_USER=${MARIADB_USER}'
-      - 'MYSQL_PASSWORD=${MARIADB_PASSWORD}'
-      - 'MYSQL_DATABASE=${MARIADB_DATABASE:-directus}'
+      - 'POSTGRES_USER=${DB_USER}'
+      - 'POSTGRES_PASSWORD=${DB_PASSWORD}'
+      - 'POSTGRES_DB=${DB_DATABASE:-directus}'
     healthcheck:
       test:
         - CMD
-        - healthcheck.sh
-        - '--su-mysql'
-        - '--connect'
-        - '--innodb_initialized'
+        - pg_isready
+        - '-U'
+        - '${DB_USER}'
+        - '-d'
+        - '${DB_DATABASE:-directus}'
       interval: 5s
       timeout: 20s
       retries: 10
@@ -84,18 +73,26 @@ services:
       retries: 10
 
   schema-applier:
-    image: 'directus/directus:11.17.0'
+    image: 'directus/directus:11.17.2'
     restart: "no"
     volumes:
       - ./snapshots:/directus/snapshots
+      - ./directus-config:/directus/directus-config
+      - ./directus-sync.config.js:/directus/directus-sync.config.js
     environment:
-      - DB_CLIENT=mysql
-      - DB_HOST=mariadb
-      - DB_PORT=3306
-      - DB_DATABASE=${MARIADB_DATABASE:-directus}
-      - DB_USER=${MARIADB_USER}
-      - DB_PASSWORD=${MARIADB_PASSWORD}
-    command: npx directus schema apply --yes ./snapshots/latest-schema.yaml
+      - DB_CLIENT=pg
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_DATABASE=${DB_DATABASE:-directus}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - ADMIN_EMAIL=${DIRECTUS_EMAIL_ADMIN:-admin@example.com}
+      - ADMIN_PASSWORD=${DIRECTUS_PASSWORD_ADMIN:-pass}
+    command: >
+      sh -c '
+      npx directus schema apply --yes ./snapshots/latest-schema.yaml &&
+      npx -y directus-sync --directus-url http://directus:8055 --directus-email $$ADMIN_EMAIL --directus-password $$ADMIN_PASSWORD push --force --no-snapshot
+      '
     depends_on:
       directus:
         condition: service_healthy

@@ -1,0 +1,48 @@
+{
+  "collection": "dj_genre",
+  "field": "dj_id",
+  "meta": {
+    "collection": "dj_genre",
+    "conditions": null,
+    "display": "related-values",
+    "display_options": {
+      "template": "{{name}}"
+    },
+    "field": "dj_id",
+    "group": null,
+    "hidden": false,
+    "interface": "select-dropdown-m2o",
+    "note": null,
+    "options": {
+      "template": "{{name}}"
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": null,
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "data_type": "varchar",
+    "default_value": null,
+    "foreign_key_column": "id",
+    "foreign_key_table": "dj",
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "is_generated": false,
+    "is_indexed": true,
+    "is_nullable": true,
+    "is_primary_key": false,
+    "is_unique": false,
+    "max_length": 36,
+    "name": "dj_id",
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "table": "dj_genre"
+  },
+  "type": "string"
+}

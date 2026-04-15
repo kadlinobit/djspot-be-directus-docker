@@ -1,0 +1,49 @@
+{
+  "collection": "dj",
+  "field": "user",
+  "meta": {
+    "collection": "dj",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "user",
+    "group": null,
+    "hidden": false,
+    "interface": "select-dropdown-m2o",
+    "note": null,
+    "options": {
+      "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "m2o",
+      "user-created"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "data_type": "varchar",
+    "default_value": null,
+    "foreign_key_column": "id",
+    "foreign_key_table": "directus_users",
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "is_generated": false,
+    "is_indexed": true,
+    "is_nullable": true,
+    "is_primary_key": false,
+    "is_unique": false,
+    "max_length": 36,
+    "name": "user",
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "table": "dj"
+  },
+  "type": "string"
+}

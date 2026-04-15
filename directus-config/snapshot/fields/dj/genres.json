@@ -1,0 +1,33 @@
+{
+  "collection": "dj",
+  "field": "genres",
+  "meta": {
+    "collection": "dj",
+    "conditions": null,
+    "display": "related-values",
+    "display_options": {
+      "template": "{{genre_id.name}}"
+    },
+    "field": "genres",
+    "group": null,
+    "hidden": false,
+    "interface": "list-m2m",
+    "note": null,
+    "options": {
+      "enableCreate": false,
+      "template": "{{genre_id.name}}"
+    },
+    "readonly": false,
+    "required": true,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "m2m"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "type": "alias"
+}

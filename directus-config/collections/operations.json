@@ -1,0 +1,180 @@
+[
+  {
+    "_syncId": "24426738-e24d-4628-97b0-39c8b3c40db2",
+    "flow": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+    "key": "aggregate_dj_follow_count",
+    "name": "Aggregate DJ Follow Count",
+    "options": {
+      "collection": "user_dj_follow",
+      "emitEvents": false,
+      "permissions": "$trigger",
+      "query": {
+        "aggregate": {
+          "count": "*"
+        },
+        "filter": {
+          "dj": {
+            "_eq": "{{ $trigger.dj }}"
+          }
+        }
+      }
+    },
+    "position_x": 19,
+    "position_y": 1,
+    "reject": null,
+    "resolve": "05a27ab9-bd22-41b6-97c7-39cbb8eb981a",
+    "type": "item-read"
+  },
+  {
+    "_syncId": "1b910828-4842-471c-954f-a953d09acfff",
+    "flow": "3e39edb2-a32f-4568-8ed6-9069adbb162b",
+    "key": "decrement_dj_follow_count",
+    "name": "Decrement DJ follow count",
+    "options": {
+      "collection": "dj",
+      "emitEvents": false,
+      "key": [],
+      "payload": {
+        "follow_count": {
+          "$decrement": 1
+        }
+      },
+      "permissions": "$full"
+    },
+    "position_x": 37,
+    "position_y": 1,
+    "reject": null,
+    "resolve": null,
+    "type": "item-update"
+  },
+  {
+    "_syncId": "d1d95428-2158-4ddd-993c-5484323c2021",
+    "flow": "011d7839-8f6c-4c83-9ffc-b7720fc8a11a",
+    "key": "exec_3wsry",
+    "name": "Run Script",
+    "options": {
+      "code": "module.exports = async function(data) {\n\tconsole.log(data);\n\treturn data;\n}"
+    },
+    "position_x": 59,
+    "position_y": 16,
+    "reject": null,
+    "resolve": null,
+    "type": "exec"
+  },
+  {
+    "_syncId": "0e2b5c8b-c4f3-4b22-bd40-aedea0850ce0",
+    "flow": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+    "key": "exec_68sxt",
+    "name": "Run Script",
+    "options": {
+      "code": "module.exports = async function(data) {\n\t// Do something...\n\treturn data;\n}"
+    },
+    "position_x": 48,
+    "position_y": 27,
+    "reject": null,
+    "resolve": null,
+    "type": "exec"
+  },
+  {
+    "_syncId": "27fee4c6-2bae-404c-8bdd-63d3a4706ab9",
+    "flow": "011d7839-8f6c-4c83-9ffc-b7720fc8a11a",
+    "key": "item_update_2gig6",
+    "name": "Update Data",
+    "options": {
+      "collection": "dj",
+      "emitEvents": false,
+      "key": "{{$trigger.payload.dj}}",
+      "payload": {
+        "follow_count": "{{ read_dj_follow_count[0].count }}"
+      },
+      "permissions": "$full"
+    },
+    "position_x": 59,
+    "position_y": 1,
+    "reject": null,
+    "resolve": null,
+    "type": "item-update"
+  },
+  {
+    "_syncId": "490252f8-f2e1-482a-ae58-88c8a8c0542c",
+    "flow": "3e39edb2-a32f-4568-8ed6-9069adbb162b",
+    "key": "read_user_dj_follow",
+    "name": "ReadUserDjFollow",
+    "options": {
+      "collection": "user_dj_follow",
+      "emitEvents": false,
+      "key": [],
+      "permissions": "$trigger",
+      "query": {
+        "filter": {
+          "id": {
+            "_in": "{{ $trigger.payload }}"
+          }
+        }
+      }
+    },
+    "position_x": 19,
+    "position_y": 1,
+    "reject": null,
+    "resolve": "1b910828-4842-471c-954f-a953d09acfff",
+    "type": "item-read"
+  },
+  {
+    "_syncId": "63abb6fb-72a3-4fc6-a323-1889c58b3a07",
+    "flow": "3e39edb2-a32f-4568-8ed6-9069adbb162b",
+    "key": "trigger_khdpm",
+    "name": "Trigger Flow",
+    "options": {
+      "flow": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+      "iterationMode": "parallel",
+      "payload": {
+        "dj": "{{ $last[0].dj }}"
+      }
+    },
+    "position_x": 37,
+    "position_y": 18,
+    "reject": null,
+    "resolve": null,
+    "type": "trigger"
+  },
+  {
+    "_syncId": "46d9f3ff-394b-431e-9388-06fccf00a31f",
+    "flow": "011d7839-8f6c-4c83-9ffc-b7720fc8a11a",
+    "key": "trigger_update_dj_follow_count",
+    "name": "TriggerUpdateDjFollowCount",
+    "options": {
+      "flow": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+      "iterationMode": "parallel",
+      "payload": {
+        "dj": "{{ $trigger.payload.dj }}"
+      }
+    },
+    "position_x": 19,
+    "position_y": 1,
+    "reject": null,
+    "resolve": null,
+    "type": "trigger"
+  },
+  {
+    "_syncId": "05a27ab9-bd22-41b6-97c7-39cbb8eb981a",
+    "flow": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+    "key": "update_dj_follow_count",
+    "name": "UpdateDjFollowCount",
+    "options": {
+      "collection": "dj",
+      "emitEvents": false,
+      "key": [
+        "{{ $trigger.dj }}"
+      ],
+      "payload": {
+        "follow_count": "{{ $last[0].count }}"
+      },
+      "permissions": "$full"
+    },
+    "position_x": 38,
+    "position_y": 1,
+    "reject": null,
+    "resolve": null,
+    "type": "item-update"
+  }
+]

@@ -1,7 +1,31 @@
 version: 1
-directus: 11.9.3
-vendor: sqlite
+directus: 11.17.1
+vendor: mysql
 collections:
+  - collection: city
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: city
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: location_city
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+      versioning: false
+    schema:
+      name: city
   - collection: dj
     meta:
       accountability: all
@@ -109,7 +133,7 @@ collections:
       color: null
       display_template: null
       group: null
-      hidden: true
+      hidden: false
       icon: import_export
       item_duplication_fields: null
       note: null
@@ -171,6 +195,254 @@ collections:
     schema:
       name: user_sound_like
 fields:
+  - collection: city
+    field: id
+    type: integer
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: city
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_indexed: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: city
+    field: name
+    type: string
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: name
+      table: city
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: city
+    field: gps
+    type: geometry.Point
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: gps
+      group: null
+      hidden: false
+      interface: map
+      note: null
+      options:
+        defaultView:
+          bearing: 0
+          center:
+            lat: 5.684341886080802e-14
+            lng: 14.5867720977526
+          pitch: 0
+          zoom: -0.3706434003783814
+        geometryType: Point
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: gps
+      table: city
+      data_type: point
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: city
+    field: district
+    type: string
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: district
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: district
+      table: city
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: city
+    field: region
+    type: string
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: region
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: region
+      table: city
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: city
+    field: zip
+    type: integer
+    meta:
+      collection: city
+      conditions: null
+      display: null
+      display_options: null
+      field: zip
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: zip
+      table: city
+      data_type: int
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: directus_users
     field: djs
     type: alias
@@ -189,6 +461,7 @@ fields:
         template: "DJ\_{{name}}"
       readonly: false
       required: false
+      searchable: true
       sort: null
       special:
         - o2m
@@ -212,6 +485,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - uuid
@@ -228,7 +502,7 @@ fields:
       numeric_precision: null
       numeric_scale: null
       is_nullable: false
-      is_unique: true
+      is_unique: false
       is_indexed: false
       is_primary_key: true
       is_generated: false
@@ -267,6 +541,7 @@ fields:
             value: archived
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -277,7 +552,7 @@ fields:
       name: status
       table: dj
       data_type: varchar
-      default_value: draft
+      default_value: published
       max_length: 255
       numeric_precision: null
       numeric_scale: null
@@ -307,6 +582,7 @@ fields:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - user-created
@@ -317,14 +593,14 @@ fields:
     schema:
       name: user_created
       table: dj
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -348,6 +624,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-created
@@ -389,6 +666,7 @@ fields:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - user-updated
@@ -399,14 +677,14 @@ fields:
     schema:
       name: user_updated
       table: dj
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -430,6 +708,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-updated
@@ -460,7 +739,7 @@ fields:
     meta:
       collection: dj
       conditions: null
-      display: null
+      display: raw
       display_options: null
       field: name
       group: null
@@ -470,6 +749,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -485,7 +765,7 @@ fields:
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
-      is_unique: false
+      is_unique: true
       is_indexed: false
       is_primary_key: false
       is_generated: false
@@ -509,6 +789,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -548,6 +829,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -557,9 +839,9 @@ fields:
     schema:
       name: bio
       table: dj
-      data_type: text
+      data_type: mediumtext
       default_value: null
-      max_length: null
+      max_length: 16777215
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
@@ -587,6 +869,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -601,126 +884,15 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
+      is_nullable: false
+      is_unique: true
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
       has_auto_increment: false
       foreign_key_table: null
       foreign_key_column: null
-  - collection: dj
-    field: city
-    type: string
-    meta:
-      collection: dj
-      conditions: null
-      display: null
-      display_options: null
-      field: city
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: true
-      sort: null
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: city
-      table: dj
-      data_type: varchar
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: dj
-    field: genres
-    type: alias
-    meta:
-      collection: dj
-      conditions: null
-      display: related-values
-      display_options:
-        template: '{{genre_id.name}}'
-      field: genres
-      group: null
-      hidden: false
-      interface: list-m2m
-      note: null
-      options:
-        enableCreate: false
-        template: '{{genre_id.name}}'
-      readonly: false
-      required: true
-      sort: null
-      special:
-        - m2m
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-  - collection: dj
-    field: sounds
-    type: alias
-    meta:
-      collection: dj
-      conditions: null
-      display: null
-      display_options: null
-      field: sounds
-      group: null
-      hidden: false
-      interface: list-o2m
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: null
-      special:
-        - o2m
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-  - collection: dj
-    field: follows
-    type: alias
-    meta:
-      collection: dj
-      conditions: null
-      display: null
-      display_options: null
-      field: follows
-      group: null
-      hidden: false
-      interface: list-o2m
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: null
-      special:
-        - o2m
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
   - collection: dj
     field: follow_count
     type: integer
@@ -736,8 +908,9 @@ fields:
       note: null
       options:
         min: 0
-      readonly: true
+      readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -747,12 +920,12 @@ fields:
     schema:
       name: follow_count
       table: dj
-      data_type: integer
+      data_type: int
       default_value: 0
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
       is_unique: false
       is_indexed: false
       is_primary_key: false
@@ -778,6 +951,7 @@ fields:
         template: "{{avatar.$thumbnail}}\_{{first_name}}\_{{last_name}}"
       readonly: false
       required: false
+      searchable: true
       sort: null
       special:
         - m2o
@@ -789,14 +963,14 @@ fields:
     schema:
       name: user
       table: dj
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -820,6 +994,7 @@ fields:
         folder: eef80e64-d375-483e-8354-d4cfea60229f
       readonly: false
       required: false
+      searchable: true
       sort: null
       special:
         - file
@@ -837,12 +1012,130 @@ fields:
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
       has_auto_increment: false
       foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: dj
+    field: genres
+    type: alias
+    meta:
+      collection: dj
+      conditions: null
+      display: related-values
+      display_options:
+        template: '{{genre_id.name}}'
+      field: genres
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options:
+        enableCreate: false
+        template: '{{genre_id.name}}'
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: dj
+    field: sounds
+    type: alias
+    meta:
+      collection: dj
+      conditions: null
+      display: null
+      display_options: null
+      field: sounds
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options: null
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: dj
+    field: follows
+    type: alias
+    meta:
+      collection: dj
+      conditions: null
+      display: null
+      display_options: null
+      field: follows
+      group: null
+      hidden: false
+      interface: list-o2m
+      note: null
+      options:
+        enableSelect: false
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special:
+        - o2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: dj
+    field: city
+    type: integer
+    meta:
+      collection: dj
+      conditions: null
+      display: null
+      display_options: null
+      field: city
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: city
+      table: dj
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_indexed: true
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: city
       foreign_key_column: id
   - collection: dj_genre
     field: id
@@ -860,6 +1153,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -869,11 +1163,11 @@ fields:
     schema:
       name: id
       table: dj_genre
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: false
       is_unique: false
       is_indexed: false
@@ -901,6 +1195,7 @@ fields:
         template: '{{name}}'
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -917,7 +1212,7 @@ fields:
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -942,6 +1237,7 @@ fields:
         template: "{{id}}\_-\_{{name}}"
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -951,14 +1247,14 @@ fields:
     schema:
       name: genre_id
       table: dj_genre
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -981,6 +1277,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -990,11 +1287,11 @@ fields:
     schema:
       name: id
       table: genre
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: false
       is_unique: false
       is_indexed: false
@@ -1010,7 +1307,7 @@ fields:
     meta:
       collection: genre
       conditions: null
-      display: null
+      display: raw
       display_options: null
       field: name
       group: null
@@ -1020,6 +1317,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1034,8 +1332,8 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
-      is_unique: false
+      is_nullable: false
+      is_unique: true
       is_indexed: false
       is_primary_key: false
       is_generated: false
@@ -1059,6 +1357,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - uuid
@@ -1075,7 +1374,7 @@ fields:
       numeric_precision: null
       numeric_scale: null
       is_nullable: false
-      is_unique: true
+      is_unique: false
       is_indexed: false
       is_primary_key: true
       is_generated: false
@@ -1114,6 +1413,7 @@ fields:
             value: archived
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1124,7 +1424,7 @@ fields:
       name: status
       table: sound
       data_type: varchar
-      default_value: draft
+      default_value: published
       max_length: 255
       numeric_precision: null
       numeric_scale: null
@@ -1154,6 +1454,7 @@ fields:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - user-created
@@ -1164,14 +1465,14 @@ fields:
     schema:
       name: user_created
       table: sound
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1195,6 +1496,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-created
@@ -1236,6 +1538,7 @@ fields:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - user-updated
@@ -1246,14 +1549,14 @@ fields:
     schema:
       name: user_updated
       table: sound
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1277,6 +1580,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-updated
@@ -1317,6 +1621,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1331,7 +1636,7 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_indexed: false
       is_primary_key: false
@@ -1356,6 +1661,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1365,9 +1671,9 @@ fields:
     schema:
       name: description
       table: sound
-      data_type: text
+      data_type: mediumtext
       default_value: null
-      max_length: null
+      max_length: 16777215
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
@@ -1379,30 +1685,6 @@ fields:
       has_auto_increment: false
       foreign_key_table: null
       foreign_key_column: null
-  - collection: sound
-    field: genres
-    type: alias
-    meta:
-      collection: sound
-      conditions: null
-      display: null
-      display_options: null
-      field: genres
-      group: null
-      hidden: false
-      interface: list-m2m
-      note: null
-      options:
-        enableCreate: false
-      readonly: false
-      required: true
-      sort: null
-      special:
-        - m2m
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
   - collection: sound
     field: type
     type: string
@@ -1426,6 +1708,7 @@ fields:
             value: podcast
       readonly: false
       required: true
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1440,7 +1723,7 @@ fields:
       max_length: 255
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
       is_indexed: false
       is_primary_key: false
@@ -1466,6 +1749,7 @@ fields:
         min: 0
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1475,11 +1759,11 @@ fields:
     schema:
       name: duration
       table: sound
-      data_type: integer
+      data_type: int
       default_value: 0
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: true
       is_unique: false
       is_indexed: false
@@ -1505,6 +1789,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special:
         - m2o
@@ -1522,13 +1807,38 @@ fields:
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
       has_auto_increment: false
       foreign_key_table: dj
       foreign_key_column: id
+  - collection: sound
+    field: genres
+    type: alias
+    meta:
+      collection: sound
+      conditions: null
+      display: null
+      display_options: null
+      field: genres
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options:
+        enableCreate: false
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
   - collection: sound
     field: likes
     type: alias
@@ -1542,9 +1852,11 @@ fields:
       hidden: false
       interface: list-o2m
       note: null
-      options: null
+      options:
+        template: '{{user_created}}'
       readonly: false
       required: false
+      searchable: true
       sort: null
       special:
         - o2m
@@ -1552,6 +1864,168 @@ fields:
       validation: null
       validation_message: null
       width: full
+  - collection: sound
+    field: photo
+    type: uuid
+    meta:
+      collection: sound
+      conditions: null
+      display: null
+      display_options: null
+      field: photo
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: {}
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: photo
+      table: sound
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: true
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: sound
+    field: like_count
+    type: integer
+    meta:
+      collection: sound
+      conditions: null
+      display: null
+      display_options: null
+      field: like_count
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        min: 0
+      readonly: false
+      required: false
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: like_count
+      table: sound
+      data_type: int
+      default_value: 0
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: sound
+    field: url
+    type: string
+    meta:
+      collection: sound
+      conditions: null
+      display: null
+      display_options: null
+      field: url
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: url
+      table: sound
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_indexed: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: sound
+    field: slug
+    type: string
+    meta:
+      collection: sound
+      conditions: null
+      display: null
+      display_options: null
+      field: slug
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      searchable: true
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: slug
+      table: sound
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: true
+      is_indexed: true
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: sound_genre
     field: id
     type: integer
@@ -1568,6 +2042,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1577,11 +2052,11 @@ fields:
     schema:
       name: id
       table: sound_genre
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: false
       is_unique: false
       is_indexed: false
@@ -1607,6 +2082,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1616,14 +2092,14 @@ fields:
     schema:
       name: sound_id
       table: sound_genre
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1646,6 +2122,7 @@ fields:
       options: null
       readonly: false
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1655,14 +2132,14 @@ fields:
     schema:
       name: genre_id
       table: sound_genre
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1685,6 +2162,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1694,11 +2172,11 @@ fields:
     schema:
       name: id
       table: user_dj_follow
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: false
       is_unique: false
       is_indexed: false
@@ -1725,6 +2203,7 @@ fields:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
       readonly: false
       required: false
+      searchable: true
       sort: null
       special:
         - user-created
@@ -1742,7 +2221,7 @@ fields:
       numeric_scale: null
       is_nullable: false
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1766,6 +2245,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-created
@@ -1804,9 +2284,11 @@ fields:
       interface: select-dropdown-m2o
       note: null
       options:
+        enableLink: true
         template: "DJ\_{{name}}"
-      readonly: true
-      required: true
+      readonly: false
+      required: false
+      searchable: true
       sort: null
       special:
         - m2o
@@ -1817,14 +2299,14 @@ fields:
     schema:
       name: dj
       table: user_dj_follow
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: false
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1847,6 +2329,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special: null
       translations: null
@@ -1856,11 +2339,11 @@ fields:
     schema:
       name: id
       table: user_sound_like
-      data_type: integer
+      data_type: int unsigned
       default_value: null
       max_length: null
-      numeric_precision: null
-      numeric_scale: null
+      numeric_precision: 10
+      numeric_scale: 0
       is_nullable: false
       is_unique: false
       is_indexed: false
@@ -1885,8 +2368,9 @@ fields:
       note: null
       options:
         template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
+      readonly: false
+      required: true
+      searchable: true
       sort: null
       special:
         - user-created
@@ -1897,14 +2381,14 @@ fields:
     schema:
       name: user_created
       table: user_sound_like
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
-      is_nullable: true
+      is_nullable: false
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
@@ -1928,6 +2412,7 @@ fields:
       options: null
       readonly: true
       required: false
+      searchable: true
       sort: null
       special:
         - date-created
@@ -1969,6 +2454,7 @@ fields:
       options: null
       readonly: false
       required: true
+      searchable: true
       sort: null
       special:
         - m2o
@@ -1979,84 +2465,230 @@ fields:
     schema:
       name: sound
       table: user_sound_like
-      data_type: char
+      data_type: varchar
       default_value: null
       max_length: 36
       numeric_precision: null
       numeric_scale: null
       is_nullable: true
       is_unique: false
-      is_indexed: false
+      is_indexed: true
       is_primary_key: false
       is_generated: false
       generation_expression: null
       has_auto_increment: false
       foreign_key_table: sound
       foreign_key_column: id
-relations:
-  - collection: dj
-    field: user_created
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: dj
-      many_field: user_created
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
+systemFields:
+  - collection: directus_access
+    field: policy
     schema:
-      table: dj
-      column: user_created
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: SET NULL
-  - collection: dj
-    field: user_updated
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: dj
-      many_field: user_updated
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
+      is_indexed: true
+  - collection: directus_access
+    field: role
     schema:
-      table: dj
-      column: user_updated
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: dj
+      is_indexed: true
+  - collection: directus_access
     field: user
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: dj
-      many_field: user
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: djs
-      sort_field: null
     schema:
-      table: dj
-      column: user
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: SET NULL
+      is_indexed: true
+  - collection: directus_activity
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_activity
+    field: timestamp
+    schema:
+      is_indexed: true
+  - collection: directus_collections
+    field: group
+    schema:
+      is_indexed: true
+  - collection: directus_comments
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_comments
+    field: user_updated
+    schema:
+      is_indexed: true
+  - collection: directus_dashboards
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_deployment_projects
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_deployment_runs
+    field: project
+    schema:
+      is_indexed: true
+  - collection: directus_deployment_runs
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_deployments
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_fields
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_files
+    field: folder
+    schema:
+      is_indexed: true
+  - collection: directus_files
+    field: modified_by
+    schema:
+      is_indexed: true
+  - collection: directus_files
+    field: uploaded_by
+    schema:
+      is_indexed: true
+  - collection: directus_flows
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_folders
+    field: parent
+    schema:
+      is_indexed: true
+  - collection: directus_notifications
+    field: recipient
+    schema:
+      is_indexed: true
+  - collection: directus_notifications
+    field: sender
+    schema:
+      is_indexed: true
+  - collection: directus_operations
+    field: flow
+    schema:
+      is_indexed: true
+  - collection: directus_operations
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_panels
+    field: dashboard
+    schema:
+      is_indexed: true
+  - collection: directus_panels
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_permissions
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_permissions
+    field: policy
+    schema:
+      is_indexed: true
+  - collection: directus_presets
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_presets
+    field: role
+    schema:
+      is_indexed: true
+  - collection: directus_presets
+    field: user
+    schema:
+      is_indexed: true
+  - collection: directus_relations
+    field: many_collection
+    schema:
+      is_indexed: true
+  - collection: directus_relations
+    field: one_collection
+    schema:
+      is_indexed: true
+  - collection: directus_revisions
+    field: activity
+    schema:
+      is_indexed: true
+  - collection: directus_revisions
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_revisions
+    field: parent
+    schema:
+      is_indexed: true
+  - collection: directus_revisions
+    field: version
+    schema:
+      is_indexed: true
+  - collection: directus_roles
+    field: parent
+    schema:
+      is_indexed: true
+  - collection: directus_sessions
+    field: share
+    schema:
+      is_indexed: true
+  - collection: directus_sessions
+    field: user
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: project_logo
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: public_background
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: public_favicon
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: public_foreground
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: public_registration_role
+    schema:
+      is_indexed: true
+  - collection: directus_settings
+    field: storage_default_folder
+    schema:
+      is_indexed: true
+  - collection: directus_shares
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_shares
+    field: role
+    schema:
+      is_indexed: true
+  - collection: directus_shares
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_users
+    field: role
+    schema:
+      is_indexed: true
+  - collection: directus_versions
+    field: collection
+    schema:
+      is_indexed: true
+  - collection: directus_versions
+    field: user_created
+    schema:
+      is_indexed: true
+  - collection: directus_versions
+    field: user_updated
+    schema:
+      is_indexed: true
+relations:
   - collection: dj
     field: photo
     related_collection: directus_files
@@ -2075,30 +2707,93 @@ relations:
       column: photo
       foreign_key_table: directus_files
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: dj_photo_foreign
+      on_update: RESTRICT
       on_delete: SET NULL
-  - collection: dj_genre
-    field: genre_id
-    related_collection: genre
+  - collection: dj
+    field: user
+    related_collection: directus_users
     meta:
-      junction_field: dj_id
-      many_collection: dj_genre
-      many_field: genre_id
+      junction_field: null
+      many_collection: dj
+      many_field: user
       one_allowed_collections: null
-      one_collection: genre
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: djs
+      sort_field: null
+    schema:
+      table: dj
+      column: user
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: dj_user_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
+  - collection: dj
+    field: user_created
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: dj
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
       one_collection_field: null
       one_deselect_action: nullify
       one_field: null
       sort_field: null
     schema:
-      table: dj_genre
-      column: genre_id
-      foreign_key_table: genre
+      table: dj
+      column: user_created
+      foreign_key_table: directus_users
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: CASCADE
+      constraint_name: dj_user_created_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: dj
+    field: user_updated
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: dj
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: dj
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: dj_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: NO ACTION
+  - collection: dj
+    field: city
+    related_collection: city
+    meta:
+      junction_field: null
+      many_collection: dj
+      many_field: city
+      one_allowed_collections: null
+      one_collection: city
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: dj
+      column: city
+      foreign_key_table: city
+      foreign_key_column: id
+      constraint_name: dj_city_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
   - collection: dj_genre
     field: dj_id
     related_collection: dj
@@ -2117,30 +2812,51 @@ relations:
       column: dj_id
       foreign_key_table: dj
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: dj_genre_dj_id_foreign
+      on_update: RESTRICT
       on_delete: CASCADE
-  - collection: sound
-    field: user_created
-    related_collection: directus_users
+  - collection: dj_genre
+    field: genre_id
+    related_collection: genre
     meta:
-      junction_field: null
-      many_collection: sound
-      many_field: user_created
+      junction_field: dj_id
+      many_collection: dj_genre
+      many_field: genre_id
       one_allowed_collections: null
-      one_collection: directus_users
+      one_collection: genre
       one_collection_field: null
       one_deselect_action: nullify
       one_field: null
       sort_field: null
     schema:
-      table: sound
-      column: user_created
-      foreign_key_table: directus_users
+      table: dj_genre
+      column: genre_id
+      foreign_key_table: genre
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: NO ACTION
+      constraint_name: dj_genre_genre_id_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
+  - collection: sound
+    field: dj
+    related_collection: dj
+    meta:
+      junction_field: null
+      many_collection: sound
+      many_field: dj
+      one_allowed_collections: null
+      one_collection: dj
+      one_collection_field: null
+      one_deselect_action: delete
+      one_field: sounds
+      sort_field: null
+    schema:
+      table: sound
+      column: dj
+      foreign_key_table: dj
+      foreign_key_column: id
+      constraint_name: sound_dj_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
   - collection: sound
     field: user_updated
     related_collection: directus_users
@@ -2159,30 +2875,72 @@ relations:
       column: user_updated
       foreign_key_table: directus_users
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: sound_user_updated_foreign
+      on_update: RESTRICT
       on_delete: NO ACTION
   - collection: sound
-    field: dj
-    related_collection: dj
+    field: user_created
+    related_collection: directus_users
     meta:
       junction_field: null
       many_collection: sound
-      many_field: dj
+      many_field: user_created
       one_allowed_collections: null
-      one_collection: dj
+      one_collection: directus_users
       one_collection_field: null
       one_deselect_action: nullify
-      one_field: sounds
+      one_field: null
       sort_field: null
     schema:
       table: sound
-      column: dj
-      foreign_key_table: dj
+      column: user_created
+      foreign_key_table: directus_users
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: sound_user_created_foreign
+      on_update: RESTRICT
+      on_delete: NO ACTION
+  - collection: sound
+    field: photo
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: sound
+      many_field: photo
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: sound
+      column: photo
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: sound_photo_foreign
+      on_update: RESTRICT
       on_delete: SET NULL
+  - collection: sound_genre
+    field: sound_id
+    related_collection: sound
+    meta:
+      junction_field: genre_id
+      many_collection: sound_genre
+      many_field: sound_id
+      one_allowed_collections: null
+      one_collection: sound
+      one_collection_field: null
+      one_deselect_action: delete
+      one_field: genres
+      sort_field: null
+    schema:
+      table: sound_genre
+      column: sound_id
+      foreign_key_table: sound
+      foreign_key_column: id
+      constraint_name: sound_genre_sound_id_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
   - collection: sound_genre
     field: genre_id
     related_collection: genre
@@ -2201,30 +2959,9 @@ relations:
       column: genre_id
       foreign_key_table: genre
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: SET NULL
-  - collection: sound_genre
-    field: sound_id
-    related_collection: sound
-    meta:
-      junction_field: genre_id
-      many_collection: sound_genre
-      many_field: sound_id
-      one_allowed_collections: null
-      one_collection: sound
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: genres
-      sort_field: null
-    schema:
-      table: sound_genre
-      column: sound_id
-      foreign_key_table: sound
-      foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
-      on_delete: SET NULL
+      constraint_name: sound_genre_genre_id_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
   - collection: user_dj_follow
     field: user_created
     related_collection: directus_users
@@ -2243,8 +2980,8 @@ relations:
       column: user_created
       foreign_key_table: directus_users
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: user_dj_follow_user_created_foreign
+      on_update: RESTRICT
       on_delete: CASCADE
   - collection: user_dj_follow
     field: dj
@@ -2256,7 +2993,7 @@ relations:
       one_allowed_collections: null
       one_collection: dj
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: follows
       sort_field: null
     schema:
@@ -2264,8 +3001,8 @@ relations:
       column: dj
       foreign_key_table: dj
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: user_dj_follow_dj_foreign
+      on_update: RESTRICT
       on_delete: CASCADE
   - collection: user_sound_like
     field: user_created
@@ -2285,8 +3022,8 @@ relations:
       column: user_created
       foreign_key_table: directus_users
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: user_sound_like_user_created_foreign
+      on_update: RESTRICT
       on_delete: CASCADE
   - collection: user_sound_like
     field: sound
@@ -2298,7 +3035,7 @@ relations:
       one_allowed_collections: null
       one_collection: sound
       one_collection_field: null
-      one_deselect_action: nullify
+      one_deselect_action: delete
       one_field: likes
       sort_field: null
     schema:
@@ -2306,6 +3043,6 @@ relations:
       column: sound
       foreign_key_table: sound
       foreign_key_column: id
-      constraint_name: null
-      on_update: NO ACTION
+      constraint_name: user_sound_like_sound_foreign
+      on_update: RESTRICT
       on_delete: CASCADE

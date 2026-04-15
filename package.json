@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "docker compose up -d",
+    "bootstrap": "docker compose exec directus npx directus bootstrap",
     "snap": "docker compose exec directus npx directus schema snapshot ./snapshots/latest-schema.yaml",
     "apply": "docker compose exec directus npx directus schema apply ./snapshots/latest-schema.yaml"
   }

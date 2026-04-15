@@ -1,0 +1,25 @@
+{
+  "collection": "user_sound_like",
+  "field": "user_created",
+  "meta": {
+    "junction_field": null,
+    "many_collection": "user_sound_like",
+    "many_field": "user_created",
+    "one_allowed_collections": null,
+    "one_collection": "directus_users",
+    "one_collection_field": null,
+    "one_deselect_action": "nullify",
+    "one_field": null,
+    "sort_field": null
+  },
+  "related_collection": "directus_users",
+  "schema": {
+    "column": "user_created",
+    "constraint_name": "user_sound_like_user_created_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "directus_users",
+    "on_delete": "CASCADE",
+    "on_update": "RESTRICT",
+    "table": "user_sound_like"
+  }
+}

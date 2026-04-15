@@ -1,0 +1,25 @@
+{
+  "collection": "dj_genre",
+  "field": "genre_id",
+  "meta": {
+    "junction_field": "dj_id",
+    "many_collection": "dj_genre",
+    "many_field": "genre_id",
+    "one_allowed_collections": null,
+    "one_collection": "genre",
+    "one_collection_field": null,
+    "one_deselect_action": "nullify",
+    "one_field": null,
+    "sort_field": null
+  },
+  "related_collection": "genre",
+  "schema": {
+    "column": "genre_id",
+    "constraint_name": "dj_genre_genre_id_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "genre",
+    "on_delete": "CASCADE",
+    "on_update": "RESTRICT",
+    "table": "dj_genre"
+  }
+}

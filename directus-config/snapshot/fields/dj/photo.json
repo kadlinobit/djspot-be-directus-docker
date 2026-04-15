@@ -1,0 +1,48 @@
+{
+  "collection": "dj",
+  "field": "photo",
+  "meta": {
+    "collection": "dj",
+    "conditions": null,
+    "display": "image",
+    "display_options": null,
+    "field": "photo",
+    "group": null,
+    "hidden": false,
+    "interface": "file-image",
+    "note": null,
+    "options": {
+      "folder": "eef80e64-d375-483e-8354-d4cfea60229f"
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "file"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "data_type": "char",
+    "default_value": null,
+    "foreign_key_column": "id",
+    "foreign_key_table": "directus_files",
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "is_generated": false,
+    "is_indexed": true,
+    "is_nullable": true,
+    "is_primary_key": false,
+    "is_unique": false,
+    "max_length": 36,
+    "name": "photo",
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "table": "dj"
+  },
+  "type": "uuid"
+}

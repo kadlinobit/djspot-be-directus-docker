@@ -1,0 +1,56 @@
+[
+  {
+    "_syncId": "011d7839-8f6c-4c83-9ffc-b7720fc8a11a",
+    "accountability": "all",
+    "color": null,
+    "description": null,
+    "icon": "follow_the_signs",
+    "name": "AddDjFollow",
+    "operation": "46d9f3ff-394b-431e-9388-06fccf00a31f",
+    "options": {
+      "collections": [
+        "user_dj_follow"
+      ],
+      "scope": [
+        "items.create"
+      ],
+      "type": "action"
+    },
+    "status": "inactive",
+    "trigger": "event"
+  },
+  {
+    "_syncId": "15d91544-4eac-4674-a6b2-cd9d874dcdca",
+    "accountability": "all",
+    "color": null,
+    "description": "Updates DJ's follow count and stores in follow_count field. Expected payload: {\"dj\": \"dj_id\", \"follow_count\": 3 }",
+    "icon": "bolt",
+    "name": "UpdateDjFollowCount",
+    "operation": "24426738-e24d-4628-97b0-39c8b3c40db2",
+    "options": {
+      "return": "$all"
+    },
+    "status": "inactive",
+    "trigger": "operation"
+  },
+  {
+    "_syncId": "3e39edb2-a32f-4568-8ed6-9069adbb162b",
+    "accountability": "all",
+    "color": null,
+    "description": null,
+    "icon": "follow_the_signs",
+    "name": "RemoveDjFollow",
+    "operation": "490252f8-f2e1-482a-ae58-88c8a8c0542c",
+    "options": {
+      "collections": [
+        "user_dj_follow"
+      ],
+      "scope": [
+        "items.delete"
+      ],
+      "type": "filter"
+    },
+    "status": "inactive",
+    "trigger": "event"
+  }
+]

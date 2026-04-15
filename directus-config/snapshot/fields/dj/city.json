@@ -1,0 +1,48 @@
+{
+  "collection": "dj",
+  "field": "city",
+  "meta": {
+    "collection": "dj",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "city",
+    "group": null,
+    "hidden": false,
+    "interface": "select-dropdown-m2o",
+    "note": null,
+    "options": {
+      "enableCreate": false
+    },
+    "readonly": false,
+    "required": true,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "m2o"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "data_type": "int unsigned",
+    "default_value": null,
+    "foreign_key_column": "id",
+    "foreign_key_table": "city",
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "is_generated": false,
+    "is_indexed": true,
+    "is_nullable": true,
+    "is_primary_key": false,
+    "is_unique": false,
+    "max_length": null,
+    "name": "city",
+    "numeric_precision": 10,
+    "numeric_scale": 0,
+    "table": "dj"
+  },
+  "type": "integer"
+}

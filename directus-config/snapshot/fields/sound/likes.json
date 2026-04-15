@@ -1,0 +1,30 @@
+{
+  "collection": "sound",
+  "field": "likes",
+  "meta": {
+    "collection": "sound",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "likes",
+    "group": null,
+    "hidden": false,
+    "interface": "list-o2m",
+    "note": null,
+    "options": {
+      "template": "{{user_created}}"
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "o2m"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "type": "alias"
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "sound_genre",
+  "field": "sound_id",
+  "meta": {
+    "junction_field": "genre_id",
+    "many_collection": "sound_genre",
+    "many_field": "sound_id",
+    "one_allowed_collections": null,
+    "one_collection": "sound",
+    "one_collection_field": null,
+    "one_deselect_action": "delete",
+    "one_field": "genres",
+    "sort_field": null
+  },
+  "related_collection": "sound",
+  "schema": {
+    "column": "sound_id",
+    "constraint_name": "sound_genre_sound_id_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "sound",
+    "on_delete": "CASCADE",
+    "on_update": "RESTRICT",
+    "table": "sound_genre"
+  }
+}

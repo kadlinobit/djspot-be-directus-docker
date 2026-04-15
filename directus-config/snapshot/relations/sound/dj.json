@@ -1,0 +1,25 @@
+{
+  "collection": "sound",
+  "field": "dj",
+  "meta": {
+    "junction_field": null,
+    "many_collection": "sound",
+    "many_field": "dj",
+    "one_allowed_collections": null,
+    "one_collection": "dj",
+    "one_collection_field": null,
+    "one_deselect_action": "delete",
+    "one_field": "sounds",
+    "sort_field": null
+  },
+  "related_collection": "dj",
+  "schema": {
+    "column": "dj",
+    "constraint_name": "sound_dj_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "dj",
+    "on_delete": "CASCADE",
+    "on_update": "RESTRICT",
+    "table": "sound"
+  }
+}

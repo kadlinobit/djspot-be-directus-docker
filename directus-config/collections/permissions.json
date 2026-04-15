@@ -1,0 +1,749 @@
+[
+  {
+    "_syncId": "701003bb-d163-4853-a0a3-8d6aa941c29c",
+    "action": "read",
+    "collection": "city",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "b81e0b99-2848-414e-ba7a-f0f5b2c8893c",
+    "action": "read",
+    "collection": "directus_files",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "b9749c69-be3b-43ba-9cda-cd9fa64901ec",
+    "action": "create",
+    "collection": "directus_users",
+    "fields": [
+      "first_name",
+      "last_name",
+      "email",
+      "password",
+      "status",
+      "role",
+      "avatar",
+      "location",
+      "title",
+      "description",
+      "tags",
+      "language",
+      "text_direction",
+      "tfa_secret",
+      "email_notifications",
+      "appearance",
+      "theme_light",
+      "theme_light_overrides",
+      "theme_dark",
+      "theme_dark_overrides",
+      "policies",
+      "token",
+      "id",
+      "last_page",
+      "last_access",
+      "provider",
+      "external_identifier",
+      "auth_data",
+      "djs"
+    ],
+    "permissions": null,
+    "policy": "_sync_default_public_policy",
+    "presets": {
+      "email": null,
+      "first_name": null,
+      "last_name": null,
+      "password": null,
+      "role": null,
+      "status": null
+    },
+    "validation": {
+      "_and": [
+        {
+          "_and": [
+            {
+              "first_name": {
+                "_nnull": true
+              }
+            },
+            {
+              "last_name": {
+                "_nnull": true
+              }
+            },
+            {
+              "email": {
+                "_nnull": true
+              }
+            },
+            {
+              "password": {
+                "_nnull": true
+              }
+            },
+            {
+              "status": {
+                "_eq": "unverified"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "_syncId": "7d797664-b4fa-4f23-96c9-d88879a195bc",
+    "action": "read",
+    "collection": "dj_genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "d74bdfb9-8b4c-429b-86dd-479cd346c9a6",
+    "action": "read",
+    "collection": "dj",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "2f0d68f1-cb8a-42e3-ae8c-27232b775b68",
+    "action": "read",
+    "collection": "genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "911b6d3c-a33d-4b5a-8590-d46f497a5e2d",
+    "action": "read",
+    "collection": "sound_genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "50dc2b53-f0b3-43b3-b654-04a142c0d664",
+    "action": "read",
+    "collection": "sound",
+    "fields": [
+      "*"
+    ],
+    "permissions": {
+      "_and": [
+        {
+          "status": {
+            "_eq": "published"
+          }
+        }
+      ]
+    },
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "5c9b997b-ca23-41fe-ae59-43bb23748f26",
+    "action": "read",
+    "collection": "user_dj_follow",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "b6dd73ca-34eb-405b-a0bc-2cdd6e30f1d3",
+    "action": "read",
+    "collection": "user_sound_like",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "_sync_default_public_policy",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "64469af0-7a2e-4892-970c-0b75576da7cd",
+    "action": "read",
+    "collection": "city",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "c11cab50-8214-439a-9426-21b212eff89a",
+    "action": "create",
+    "collection": "directus_files",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "53eec493-41a4-4385-a635-fbd5cc7cb581",
+    "action": "delete",
+    "collection": "directus_files",
+    "fields": null,
+    "permissions": {
+      "uploaded_by": {
+        "id": {
+          "_eq": "$CURRENT_USER"
+        }
+      }
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "850ee0f5-44c8-4d25-b056-e6fd6395acd7",
+    "action": "read",
+    "collection": "directus_files",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "cf813aac-d69e-4c13-abe8-d7fe8dd6cd4a",
+    "action": "update",
+    "collection": "directus_files",
+    "fields": [
+      "title",
+      "description",
+      "tags",
+      "storage",
+      "location",
+      "storage_divider",
+      "filename_disk",
+      "metadata",
+      "filename_download",
+      "type",
+      "filesize",
+      "modified_on",
+      "modified_by",
+      "embed",
+      "uploaded_by",
+      "folder",
+      "uploaded_on",
+      "width",
+      "height",
+      "duration",
+      "charset",
+      "$thumbnail"
+    ],
+    "permissions": {
+      "_or": [
+        {
+          "uploaded_by": {
+            "id": {
+              "_eq": "$CURRENT_USER"
+            }
+          }
+        },
+        {
+          "uploaded_by": {
+            "_eq": "$CURRENT_USER"
+          }
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "5c5701db-a276-40af-9e7a-c819e92b1a0e",
+    "action": "read",
+    "collection": "directus_users",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "ea2eee31-311f-49ab-9fac-3f96c89be89e",
+    "action": "update",
+    "collection": "directus_users",
+    "fields": [
+      "first_name",
+      "last_name",
+      "email",
+      "password",
+      "location",
+      "language"
+    ],
+    "permissions": {
+      "_and": [
+        {
+          "id": {
+            "_eq": "$CURRENT_USER"
+          }
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "e5a89acf-5570-4ed0-8d85-9f365d868eb6",
+    "action": "create",
+    "collection": "dj_genre",
+    "fields": [
+      "genre_id",
+      "dj_id"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "beff4cf0-074a-4d77-aeb2-5bd1dec6a8fd",
+    "action": "delete",
+    "collection": "dj_genre",
+    "fields": null,
+    "permissions": {
+      "dj_id": {
+        "user": {
+          "id": {
+            "_eq": "$CURRENT_USER"
+          }
+        }
+      }
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "afcc41ff-312d-4e1f-8beb-c89190774089",
+    "action": "read",
+    "collection": "dj_genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "119f7ca2-f7ff-4901-8428-c0c1bde70372",
+    "action": "update",
+    "collection": "dj_genre",
+    "fields": null,
+    "permissions": {
+      "dj_id": {
+        "user": {
+          "id": {
+            "_eq": "$CURRENT_USER"
+          }
+        }
+      }
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "654a046a-8396-40e7-8978-fb508a10a925",
+    "action": "create",
+    "collection": "dj",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "39cd65ea-e441-4908-920c-a7a12422d4ed",
+    "action": "delete",
+    "collection": "dj",
+    "fields": null,
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "user": {
+                "id": {
+                  "_eq": "$CURRENT_USER"
+                }
+              }
+            },
+            {
+              "user": {
+                "_eq": "$CURRENT_USER"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "0004379f-dbc7-4d5d-a362-2d0a7c3f0cfc",
+    "action": "read",
+    "collection": "dj",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "93af9796-1d9b-493c-a85c-3a42472a6a24",
+    "action": "update",
+    "collection": "dj",
+    "fields": [
+      "*"
+    ],
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "user": {
+                "id": {
+                  "_eq": "$CURRENT_USER"
+                }
+              }
+            },
+            {
+              "user": {
+                "_eq": "$CURRENT_USER"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "dc9b1541-486f-4384-8f8b-cbb1bcb3968d",
+    "action": "read",
+    "collection": "genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "64753345-d00e-4b60-9460-44e09fd3fe70",
+    "action": "create",
+    "collection": "sound_genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": null,
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "a2324268-37ab-4a73-969a-7c937d890b0f",
+    "action": "delete",
+    "collection": "sound_genre",
+    "fields": null,
+    "permissions": {
+      "sound_id": {
+        "dj": {
+          "user": {
+            "id": {
+              "_eq": "$CURRENT_USER"
+            }
+          }
+        }
+      }
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "7b15cef7-d7da-4332-9bfd-ad3aa110ede9",
+    "action": "read",
+    "collection": "sound_genre",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "ab9f4cfe-44ba-404e-83c3-c923bff5e953",
+    "action": "create",
+    "collection": "sound",
+    "fields": [
+      "*"
+    ],
+    "permissions": null,
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "699c63e9-e9fa-4751-bb8e-e396b4743ca5",
+    "action": "delete",
+    "collection": "sound",
+    "fields": null,
+    "permissions": {
+      "_or": [
+        {
+          "dj": {
+            "user": {
+              "_eq": "$CURRENT_USER"
+            }
+          }
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "8416eef8-de62-41e8-bd56-dbd9fb4f5c3f",
+    "action": "read",
+    "collection": "sound",
+    "fields": [
+      "*"
+    ],
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "status": {
+                "_eq": "published"
+              }
+            },
+            {
+              "dj": {
+                "user": {
+                  "id": {
+                    "_eq": "$CURRENT_USER"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "809c1b20-1902-4953-9806-4280e9c308fb",
+    "action": "update",
+    "collection": "sound",
+    "fields": [
+      "dj",
+      "photo",
+      "user_updated",
+      "id",
+      "status",
+      "date_created",
+      "date_updated",
+      "name",
+      "description",
+      "type",
+      "duration",
+      "like_count",
+      "url",
+      "genres",
+      "likes",
+      "slug"
+    ],
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "dj": {
+                "user": {
+                  "id": {
+                    "_eq": "$CURRENT_USER"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "4bbda068-407e-4f3e-99fb-07f1bdfe75b6",
+    "action": "create",
+    "collection": "user_dj_follow",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "34a1d71d-463a-410f-a2a7-c416488e8304",
+    "action": "delete",
+    "collection": "user_dj_follow",
+    "fields": null,
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "user_created": {
+                "id": {
+                  "_eq": "$CURRENT_USER"
+                }
+              }
+            },
+            {
+              "user_created": {
+                "_eq": "$CURRENT_USER"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "0df0d5df-91e7-47cb-a638-f1625169d8fd",
+    "action": "read",
+    "collection": "user_dj_follow",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "f1a32cce-1792-400f-83bb-4b7813169c60",
+    "action": "create",
+    "collection": "user_sound_like",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  },
+  {
+    "_syncId": "5fbaff1d-f12d-4138-b810-0e1956a35eb0",
+    "action": "delete",
+    "collection": "user_sound_like",
+    "fields": null,
+    "permissions": {
+      "_and": [
+        {
+          "_or": [
+            {
+              "user_created": {
+                "id": {
+                  "_eq": "$CURRENT_USER"
+                }
+              }
+            },
+            {
+              "user_created": {
+                "_eq": "$CURRENT_USER"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": null
+  },
+  {
+    "_syncId": "a6c43ee2-a561-483f-807d-8bdc2426b103",
+    "action": "read",
+    "collection": "user_sound_like",
+    "fields": [
+      "*"
+    ],
+    "permissions": {},
+    "policy": "780ce75c-02a7-48dd-b3c4-2e22965e07f2",
+    "presets": null,
+    "validation": {}
+  }
+]

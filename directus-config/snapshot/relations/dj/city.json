@@ -1,0 +1,25 @@
+{
+  "collection": "dj",
+  "field": "city",
+  "meta": {
+    "junction_field": null,
+    "many_collection": "dj",
+    "many_field": "city",
+    "one_allowed_collections": null,
+    "one_collection": "city",
+    "one_collection_field": null,
+    "one_deselect_action": "nullify",
+    "one_field": null,
+    "sort_field": null
+  },
+  "related_collection": "city",
+  "schema": {
+    "column": "city",
+    "constraint_name": "dj_city_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "city",
+    "on_delete": "SET NULL",
+    "on_update": "RESTRICT",
+    "table": "dj"
+  }
+}

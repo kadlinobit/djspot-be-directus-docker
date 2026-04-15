@@ -1,0 +1,2914 @@
+[
+	{
+		"name": "Aš",
+		"zip": 35201,
+		"district": "Cheb",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.195113,
+				50.223983
+			]
+		}
+	},
+	{
+		"name": "Benešov",
+		"zip": 25601,
+		"district": "Benešov",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.68747,
+				49.783882
+			]
+		}
+	},
+	{
+		"name": "Beroun",
+		"zip": 26601,
+		"district": "Beroun",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.086384,
+				49.967305
+			]
+		}
+	},
+	{
+		"name": "Bílina",
+		"zip": 41801,
+		"district": "Teplice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.775459,
+				50.548647
+			]
+		}
+	},
+	{
+		"name": "Bílovec",
+		"zip": 74301,
+		"district": "Nový Jičín",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.015919,
+				49.756486
+			]
+		}
+	},
+	{
+		"name": "Blansko",
+		"zip": 67801,
+		"district": "Blansko",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.647855,
+				49.36495
+			]
+		}
+	},
+	{
+		"name": "Blatná",
+		"zip": 38801,
+		"district": "Strakonice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.881864,
+				49.424993
+			]
+		}
+	},
+	{
+		"name": "Blovice",
+		"zip": 33601,
+		"district": "Plzeň-jih",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.540199,
+				49.582303
+			]
+		}
+	},
+	{
+		"name": "Bohumín",
+		"zip": 73581,
+		"district": "Karviná",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.357074,
+				49.904426
+			]
+		}
+	},
+	{
+		"name": "Boskovice",
+		"zip": 68001,
+		"district": "Blansko",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.660076,
+				49.487612
+			]
+		}
+	},
+	{
+		"name": "Břeclav",
+		"zip": 69002,
+		"district": "Břeclav",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.882617,
+				48.75324
+			]
+		}
+	},
+	{
+		"name": "Brno",
+		"zip": 60200,
+		"district": "Brno-město",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.606937,
+				49.19516
+			]
+		}
+	},
+	{
+		"name": "Broumov",
+		"zip": 55001,
+		"district": "Náchod",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.331915,
+				50.585758
+			]
+		}
+	},
+	{
+		"name": "Bruntál",
+		"zip": 79201,
+		"district": "Bruntál",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.463794,
+				49.988277
+			]
+		}
+	},
+	{
+		"name": "Bučovice",
+		"zip": 68501,
+		"district": "Vyškov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.003981,
+				49.149402
+			]
+		}
+	},
+	{
+		"name": "Bystřice nad Pernštejnem",
+		"zip": 59301,
+		"district": "Žďár nad Sázavou",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.261571,
+				49.523046
+			]
+		}
+	},
+	{
+		"name": "Bystřice pod Hostýnem",
+		"zip": 76861,
+		"district": "Kroměříž",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.674121,
+				49.399337
+			]
+		}
+	},
+	{
+		"name": "Čáslav",
+		"zip": 28601,
+		"district": "Kutná Hora",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.390894,
+				49.910995
+			]
+		}
+	},
+	{
+		"name": "Černošice",
+		"zip": 25228,
+		"district": "Praha-západ",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.319902,
+				49.960184
+			]
+		}
+	},
+	{
+		"name": "Česká Lípa",
+		"zip": 47001,
+		"district": "Česká Lípa",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.539799,
+				50.67862
+			]
+		}
+	},
+	{
+		"name": "Česká Třebová",
+		"zip": 56002,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.447385,
+				49.901982
+			]
+		}
+	},
+	{
+		"name": "Český Brod",
+		"zip": 28201,
+		"district": "Kolín",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.860919,
+				50.074304
+			]
+		}
+	},
+	{
+		"name": "Český Krumlov",
+		"zip": 38101,
+		"district": "Český Krumlov",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.317566,
+				48.812835
+			]
+		}
+	},
+	{
+		"name": "Český Těšín",
+		"zip": 73701,
+		"district": "Karviná",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.623896,
+				49.747144
+			]
+		}
+	},
+	{
+		"name": "Cheb",
+		"zip": 35002,
+		"district": "Cheb",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.369964,
+				50.079633
+			]
+		}
+	},
+	{
+		"name": "Chomutov",
+		"zip": 43004,
+		"district": "Chomutov",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.410837,
+				50.463598
+			]
+		}
+	},
+	{
+		"name": "Chotěboř",
+		"zip": 58301,
+		"district": "Havlíčkův Brod",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.671142,
+				49.720714
+			]
+		}
+	},
+	{
+		"name": "Chrudim",
+		"zip": 53701,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.795158,
+				49.949824
+			]
+		}
+	},
+	{
+		"name": "Dačice",
+		"zip": 38001,
+		"district": "Jindřichův Hradec",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.434304,
+				49.07992
+			]
+		}
+	},
+	{
+		"name": "Dobříš",
+		"zip": 26301,
+		"district": "Příbram",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.167273,
+				49.781238
+			]
+		}
+	},
+	{
+		"name": "Dobruška",
+		"zip": 51801,
+		"district": "Rychnov nad Kněžnou",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.160118,
+				50.292111
+			]
+		}
+	},
+	{
+		"name": "Domažlice",
+		"zip": 34401,
+		"district": "Domažlice",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.931243,
+				49.439803
+			]
+		}
+	},
+	{
+		"name": "Dvůr Králové nad Labem",
+		"zip": 54401,
+		"district": "Trutnov",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.814127,
+				50.43182
+			]
+		}
+	},
+	{
+		"name": "Frenštát pod Radhoštěm",
+		"zip": 74401,
+		"district": "Nový Jičín",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.21089,
+				49.548445
+			]
+		}
+	},
+	{
+		"name": "Frýdlant",
+		"zip": 46401,
+		"district": "Liberec",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.079851,
+				50.921496
+			]
+		}
+	},
+	{
+		"name": "Frýdlant nad Ostravicí",
+		"zip": 73911,
+		"district": "Frýdek-Místek",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.358605,
+				49.591902
+			]
+		}
+	},
+	{
+		"name": "Havlíčkův Brod",
+		"zip": 58001,
+		"district": "Havlíčkův Brod",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.579755,
+				49.604436
+			]
+		}
+	},
+	{
+		"name": "Hlinsko",
+		"zip": 75131,
+		"district": "Přerov",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.579251,
+				49.49464
+			]
+		}
+	},
+	{
+		"name": "Hlinsko",
+		"zip": 53901,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.907661,
+				49.762231
+			]
+		}
+	},
+	{
+		"name": "Hlučín",
+		"zip": 74801,
+		"district": "Opava",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.190649,
+				49.896627
+			]
+		}
+	},
+	{
+		"name": "Hodonín",
+		"zip": 67971,
+		"district": "Blansko",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.410379,
+				49.501284
+			]
+		}
+	},
+	{
+		"name": "Hodonín",
+		"zip": 69501,
+		"district": "Hodonín",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.126102,
+				48.853039
+			]
+		}
+	},
+	{
+		"name": "Hodonín",
+		"zip": 53825,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.78717,
+				49.837054
+			]
+		}
+	},
+	{
+		"name": "Holešov",
+		"zip": 76901,
+		"district": "Kroměříž",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.57843,
+				49.33341
+			]
+		}
+	},
+	{
+		"name": "Holice",
+		"zip": 53401,
+		"district": "Pardubice",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.986005,
+				50.06611
+			]
+		}
+	},
+	{
+		"name": "Horažďovice",
+		"zip": 34101,
+		"district": "Klatovy",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.701106,
+				49.320794
+			]
+		}
+	},
+	{
+		"name": "Hořice",
+		"zip": 39601,
+		"district": "Pelhřimov",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.185502,
+				49.599362
+			]
+		}
+	},
+	{
+		"name": "Hořice",
+		"zip": 50801,
+		"district": "Jičín",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.63194,
+				50.366189
+			]
+		}
+	},
+	{
+		"name": "Hořovice",
+		"zip": 26801,
+		"district": "Beroun",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.902789,
+				49.836078
+			]
+		}
+	},
+	{
+		"name": "Horšovský Týn",
+		"zip": 34601,
+		"district": "Domažlice",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.944527,
+				49.530286
+			]
+		}
+	},
+	{
+		"name": "Hradec Králové",
+		"zip": 50002,
+		"district": "Hradec Králové",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.832093738246755,
+				50.20950438013813
+			]
+		}
+	},
+	{
+		"name": "Hranice",
+		"zip": 37401,
+		"district": "České Budějovice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.868392,
+				48.83852
+			]
+		}
+	},
+	{
+		"name": "Hranice",
+		"zip": 35124,
+		"district": "Cheb",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.175894,
+				50.304702
+			]
+		}
+	},
+	{
+		"name": "Hranice",
+		"zip": 75301,
+		"district": "Přerov",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.735022,
+				49.549764
+			]
+		}
+	},
+	{
+		"name": "Humpolec",
+		"zip": 39601,
+		"district": "Pelhřimov",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.359423,
+				49.541624
+			]
+		}
+	},
+	{
+		"name": "Hustopeče",
+		"zip": 69301,
+		"district": "Břeclav",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.737726,
+				48.940946
+			]
+		}
+	},
+	{
+		"name": "Ivančice",
+		"zip": 66491,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.377622,
+				49.101545
+			]
+		}
+	},
+	{
+		"name": "Jablonec nad Nisou",
+		"zip": 46601,
+		"district": "Jablonec nad Nisou",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.170414,
+				50.722153
+			]
+		}
+	},
+	{
+		"name": "Jablunkov",
+		"zip": 73991,
+		"district": "Frýdek-Místek",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.764694,
+				49.576815
+			]
+		}
+	},
+	{
+		"name": "Jaroměř",
+		"zip": 55101,
+		"district": "Náchod",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.924238,
+				50.356904
+			]
+		}
+	},
+	{
+		"name": "Jeseník",
+		"zip": 79001,
+		"district": "Jeseník",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.198147,
+				50.224725
+			]
+		}
+	},
+	{
+		"name": "Jičín",
+		"zip": 50601,
+		"district": "Jičín",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.361144,
+				50.435433
+			]
+		}
+	},
+	{
+		"name": "Jihlava",
+		"zip": 58601,
+		"district": "Jihlava",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.595469,
+				49.41586
+			]
+		}
+	},
+	{
+		"name": "Jilemnice",
+		"zip": 51401,
+		"district": "Semily",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.506637,
+				50.608996
+			]
+		}
+	},
+	{
+		"name": "Jindřichův Hradec",
+		"zip": 37701,
+		"district": "Jindřichův Hradec",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.006239,
+				49.144582
+			]
+		}
+	},
+	{
+		"name": "Kadaň",
+		"zip": 43201,
+		"district": "Chomutov",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.271422,
+				50.376092
+			]
+		}
+	},
+	{
+		"name": "Kaplice",
+		"zip": 38241,
+		"district": "Český Krumlov",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.496373,
+				48.738589
+			]
+		}
+	},
+	{
+		"name": "Karlovy Vary",
+		"zip": 36001,
+		"district": "Karlovy Vary",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.872062,
+				50.231952
+			]
+		}
+	},
+	{
+		"name": "Kladno",
+		"zip": 53901,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.982386,
+				49.772574
+			]
+		}
+	},
+	{
+		"name": "Kladno",
+		"zip": 27201,
+		"district": "Kladno",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.106846,
+				50.141799
+			]
+		}
+	},
+	{
+		"name": "Klatovy",
+		"zip": 33901,
+		"district": "Klatovy",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.295194,
+				49.395655
+			]
+		}
+	},
+	{
+		"name": "Kolín",
+		"zip": 28002,
+		"district": "Kolín",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.202828,
+				50.027429
+			]
+		}
+	},
+	{
+		"name": "Konice",
+		"zip": 79852,
+		"district": "Prostějov",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.889217,
+				49.590395
+			]
+		}
+	},
+	{
+		"name": "Kopřivnice",
+		"zip": 74221,
+		"district": "Nový Jičín",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.14491,
+				49.59957
+			]
+		}
+	},
+	{
+		"name": "Kostelec nad Orlicí",
+		"zip": 51741,
+		"district": "Rychnov nad Kněžnou",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.215084,
+				50.122511
+			]
+		}
+	},
+	{
+		"name": "Králíky",
+		"zip": 50401,
+		"district": "Hradec Králové",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.53668,
+				50.259542
+			]
+		}
+	},
+	{
+		"name": "Králíky",
+		"zip": 56169,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.760646,
+				50.083939
+			]
+		}
+	},
+	{
+		"name": "Kralovice",
+		"zip": 33141,
+		"district": "Plzeň-sever",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.487584,
+				49.982024
+			]
+		}
+	},
+	{
+		"name": "Kralupy nad Vltavou",
+		"zip": 27801,
+		"district": "Mělník",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.310745,
+				50.241745
+			]
+		}
+	},
+	{
+		"name": "Kraslice",
+		"zip": 35801,
+		"district": "Sokolov",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.517588,
+				50.323835
+			]
+		}
+	},
+	{
+		"name": "Kravaře",
+		"zip": 47103,
+		"district": "Česká Lípa",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.392521,
+				50.632503
+			]
+		}
+	},
+	{
+		"name": "Kravaře",
+		"zip": 74721,
+		"district": "Opava",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.004827,
+				49.93213
+			]
+		}
+	},
+	{
+		"name": "Krnov",
+		"zip": 79401,
+		"district": "Bruntál",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.703168,
+				50.090683
+			]
+		}
+	},
+	{
+		"name": "Kroměříž",
+		"zip": 76701,
+		"district": "Kroměříž",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.39948,
+				49.291758
+			]
+		}
+	},
+	{
+		"name": "Kuřim",
+		"zip": 66434,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.531546,
+				49.298618
+			]
+		}
+	},
+	{
+		"name": "Kutná Hora",
+		"zip": 28401,
+		"district": "Kutná Hora",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.268754,
+				49.952531
+			]
+		}
+	},
+	{
+		"name": "Kyjov",
+		"zip": 69701,
+		"district": "Hodonín",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.12261,
+				49.009967
+			]
+		}
+	},
+	{
+		"name": "Kyjov",
+		"zip": 58001,
+		"district": "Havlíčkův Brod",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.623325,
+				49.629564
+			]
+		}
+	},
+	{
+		"name": "Kyjov",
+		"zip": 59214,
+		"district": "Žďár nad Sázavou",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.881657,
+				49.443544
+			]
+		}
+	},
+	{
+		"name": "Lanškroun",
+		"zip": 56301,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.612597,
+				49.912141
+			]
+		}
+	},
+	{
+		"name": "Liberec",
+		"zip": 46001,
+		"district": "Liberec",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.054439,
+				50.76638
+			]
+		}
+	},
+	{
+		"name": "Lipník nad Bečvou",
+		"zip": 75131,
+		"district": "Přerov",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.586743,
+				49.526832
+			]
+		}
+	},
+	{
+		"name": "Litoměřice",
+		"zip": 41201,
+		"district": "Litoměřice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.130646,
+				50.53852
+			]
+		}
+	},
+	{
+		"name": "Litomyšl",
+		"zip": 57001,
+		"district": "Svitavy",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.311162,
+				49.870623
+			]
+		}
+	},
+	{
+		"name": "Litovel",
+		"zip": 78401,
+		"district": "Olomouc",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.076255,
+				49.701309
+			]
+		}
+	},
+	{
+		"name": "Litvínov",
+		"zip": 43601,
+		"district": "Most",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.610342,
+				50.598526
+			]
+		}
+	},
+	{
+		"name": "Louny",
+		"zip": 44001,
+		"district": "Louny",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.803455,
+				50.354081
+			]
+		}
+	},
+	{
+		"name": "Lovosice",
+		"zip": 41002,
+		"district": "Litoměřice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.051142,
+				50.515143
+			]
+		}
+	},
+	{
+		"name": "Luhačovice",
+		"zip": 76326,
+		"district": "Zlín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.757583,
+				49.099922
+			]
+		}
+	},
+	{
+		"name": "Lysá nad Labem",
+		"zip": 28922,
+		"district": "Nymburk",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.832919,
+				50.201532
+			]
+		}
+	},
+	{
+		"name": "Mariánské Lázně",
+		"zip": 35301,
+		"district": "Cheb",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.701298,
+				49.964699
+			]
+		}
+	},
+	{
+		"name": "Mělník",
+		"zip": 27601,
+		"district": "Mělník",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.481881,
+				50.354002
+			]
+		}
+	},
+	{
+		"name": "Mikulov",
+		"zip": 69201,
+		"district": "Břeclav",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.637788,
+				48.805383
+			]
+		}
+	},
+	{
+		"name": "Mikulov",
+		"zip": 41901,
+		"district": "Teplice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.721712,
+				50.687713
+			]
+		}
+	},
+	{
+		"name": "Milevsko",
+		"zip": 39901,
+		"district": "Písek",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.360109,
+				49.450998
+			]
+		}
+	},
+	{
+		"name": "Mladá Boleslav",
+		"zip": 29301,
+		"district": "Mladá Boleslav",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.908538,
+				50.413525
+			]
+		}
+	},
+	{
+		"name": "Mnichovo Hradiště",
+		"zip": 29501,
+		"district": "Mladá Boleslav",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.972104,
+				50.527029
+			]
+		}
+	},
+	{
+		"name": "Mohelnice",
+		"zip": 78985,
+		"district": "Šumperk",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.919567,
+				49.777082
+			]
+		}
+	},
+	{
+		"name": "Mohelnice",
+		"zip": 33501,
+		"district": "Plzeň-jih",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.641798,
+				49.48089
+			]
+		}
+	},
+	{
+		"name": "Moravská Třebová",
+		"zip": 57101,
+		"district": "Svitavy",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.663631,
+				49.757697
+			]
+		}
+	},
+	{
+		"name": "Moravské Budějovice",
+		"zip": 67602,
+		"district": "Třebíč",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.808746,
+				49.05219
+			]
+		}
+	},
+	{
+		"name": "Moravský Krumlov",
+		"zip": 67201,
+		"district": "Znojmo",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.311798,
+				49.049031
+			]
+		}
+	},
+	{
+		"name": "Most",
+		"zip": 43401,
+		"district": "Most",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.633012,
+				50.501655
+			]
+		}
+	},
+	{
+		"name": "Náchod",
+		"zip": 54701,
+		"district": "Náchod",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.165735,
+				50.414672
+			]
+		}
+	},
+	{
+		"name": "Náměšť nad Oslavou",
+		"zip": 67571,
+		"district": "Třebíč",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.155845,
+				49.205556
+			]
+		}
+	},
+	{
+		"name": "Nepomuk",
+		"zip": 33501,
+		"district": "Plzeň-jih",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.582361,
+				49.48627
+			]
+		}
+	},
+	{
+		"name": "Nepomuk",
+		"zip": 26242,
+		"district": "Příbram",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.837368,
+				49.642895
+			]
+		}
+	},
+	{
+		"name": "Neratovice",
+		"zip": 27711,
+		"district": "Mělník",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.517703,
+				50.259361
+			]
+		}
+	},
+	{
+		"name": "Nová Paka",
+		"zip": 50901,
+		"district": "Jičín",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.515138,
+				50.494593
+			]
+		}
+	},
+	{
+		"name": "Nové Město na Moravě",
+		"zip": 59231,
+		"district": "Žďár nad Sázavou",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.074288,
+				49.561543
+			]
+		}
+	},
+	{
+		"name": "Nové Město nad Metují",
+		"zip": 54901,
+		"district": "Náchod",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.151571,
+				50.344662
+			]
+		}
+	},
+	{
+		"name": "Nový Bor",
+		"zip": 47301,
+		"district": "Česká Lípa",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.555664,
+				50.757714
+			]
+		}
+	},
+	{
+		"name": "Nový Bydžov",
+		"zip": 50401,
+		"district": "Hradec Králové",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.490926,
+				50.241602
+			]
+		}
+	},
+	{
+		"name": "Nový Jičín",
+		"zip": 74101,
+		"district": "Nový Jičín",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.013636,
+				49.594425
+			]
+		}
+	},
+	{
+		"name": "Nymburk",
+		"zip": 28802,
+		"district": "Nymburk",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.04376,
+				50.185682
+			]
+		}
+	},
+	{
+		"name": "Nýřany",
+		"zip": 33023,
+		"district": "Plzeň-sever",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.204705,
+				49.712816
+			]
+		}
+	},
+	{
+		"name": "Odry",
+		"zip": 74235,
+		"district": "Nový Jičín",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.83095,
+				49.662648
+			]
+		}
+	},
+	{
+		"name": "Olomouc",
+		"zip": 77900,
+		"district": "Olomouc",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.250979,
+				49.593878
+			]
+		}
+	},
+	{
+		"name": "Opava",
+		"zip": 74601,
+		"district": "Opava",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.894899,
+				49.94076
+			]
+		}
+	},
+	{
+		"name": "Orlová",
+		"zip": 73511,
+		"district": "Karviná",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.425108,
+				49.870238
+			]
+		}
+	},
+	{
+		"name": "Ostrava",
+		"zip": 70200,
+		"district": "Ostrava-město",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.262624,
+				49.821023
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 36301,
+		"district": "Karlovy Vary",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.939183,
+				50.306035
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 58401,
+		"district": "Havlíčkův Brod",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.301494,
+				49.693104
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 53863,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.030432,
+				49.972703
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 56122,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.540637,
+				49.930345
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 25706,
+		"district": "Benešov",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.851197,
+				49.665402
+			]
+		}
+	},
+	{
+		"name": "Ostrov",
+		"zip": 26272,
+		"district": "Příbram",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.014609,
+				49.611219
+			]
+		}
+	},
+	{
+		"name": "Otrokovice",
+		"zip": 76502,
+		"district": "Zlín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.530876,
+				49.210016
+			]
+		}
+	},
+	{
+		"name": "Pacov",
+		"zip": 39501,
+		"district": "Pelhřimov",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.001783,
+				49.470865
+			]
+		}
+	},
+	{
+		"name": "Pardubice",
+		"zip": 53002,
+		"district": "Pardubice",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.781299,
+				50.034409
+			]
+		}
+	},
+	{
+		"name": "Pelhřimov",
+		"zip": 39301,
+		"district": "Pelhřimov",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.223083,
+				49.430721
+			]
+		}
+	},
+	{
+		"name": "Písek",
+		"zip": 39701,
+		"district": "Písek",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.158129,
+				49.303554
+			]
+		}
+	},
+	{
+		"name": "Písek",
+		"zip": 50351,
+		"district": "Hradec Králové",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.501834,
+				50.15553
+			]
+		}
+	},
+	{
+		"name": "Písek",
+		"zip": 73984,
+		"district": "Frýdek-Místek",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.80242,
+				49.55934
+			]
+		}
+	},
+	{
+		"name": "Podbořany",
+		"zip": 44101,
+		"district": "Louny",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.41203,
+				50.229475
+			]
+		}
+	},
+	{
+		"name": "Poděbrady",
+		"zip": 29001,
+		"district": "Nymburk",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.118988,
+				50.142525
+			]
+		}
+	},
+	{
+		"name": "Pohořelice",
+		"zip": 69123,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.524557,
+				48.981287
+			]
+		}
+	},
+	{
+		"name": "Pohořelice",
+		"zip": 76361,
+		"district": "Zlín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.537954,
+				49.176665
+			]
+		}
+	},
+	{
+		"name": "Polička",
+		"zip": 57201,
+		"district": "Svitavy",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.265977,
+				49.715034
+			]
+		}
+	},
+	{
+		"name": "Prachatice",
+		"zip": 38301,
+		"district": "Prachatice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.0001,
+				49.01101
+			]
+		}
+	},
+	{
+		"name": "Praha",
+		"zip": 11000,
+		"district": "Praha",
+		"region": "Hlavní město Praha",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.4379,
+				50.075638
+			]
+		}
+	},
+	{
+		"name": "Přelouč",
+		"zip": 53501,
+		"district": "Pardubice",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.560413,
+				50.039948
+			]
+		}
+	},
+	{
+		"name": "Přeštice",
+		"zip": 33401,
+		"district": "Plzeň-jih",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.333607,
+				49.573091
+			]
+		}
+	},
+	{
+		"name": "Příbram",
+		"zip": 26101,
+		"district": "Příbram",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.999045,
+				49.685532
+			]
+		}
+	},
+	{
+		"name": "Rakovník",
+		"zip": 26901,
+		"district": "Rakovník",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.739762,
+				50.106223
+			]
+		}
+	},
+	{
+		"name": "Říčany",
+		"zip": 66482,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.393723,
+				49.215075
+			]
+		}
+	},
+	{
+		"name": "Říčany",
+		"zip": 25101,
+		"district": "Praha-východ",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.654376,
+				49.991778
+			]
+		}
+	},
+	{
+		"name": "Rokycany",
+		"zip": 33701,
+		"district": "Rokycany",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.592993,
+				49.738197
+			]
+		}
+	},
+	{
+		"name": "Rosice",
+		"zip": 66501,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.387975,
+				49.18242
+			]
+		}
+	},
+	{
+		"name": "Rosice",
+		"zip": 53834,
+		"district": "Chrudim",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.951376,
+				49.922359
+			]
+		}
+	},
+	{
+		"name": "Roudnice nad Labem",
+		"zip": 41301,
+		"district": "Litoměřice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.260565,
+				50.425305
+			]
+		}
+	},
+	{
+		"name": "Rožnov pod Radhoštěm",
+		"zip": 75661,
+		"district": "Vsetín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.143131,
+				49.458626
+			]
+		}
+	},
+	{
+		"name": "Rumburk",
+		"zip": 40801,
+		"district": "Děčín",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.555255,
+				50.953525
+			]
+		}
+	},
+	{
+		"name": "Rychnov nad Kněžnou",
+		"zip": 51601,
+		"district": "Rychnov nad Kněžnou",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.277784,
+				50.166065
+			]
+		}
+	},
+	{
+		"name": "Rýmařov",
+		"zip": 79501,
+		"district": "Bruntál",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.271873,
+				49.931927
+			]
+		}
+	},
+	{
+		"name": "Sedlčany",
+		"zip": 26401,
+		"district": "Příbram",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.426744,
+				49.660677
+			]
+		}
+	},
+	{
+		"name": "Semily",
+		"zip": 51301,
+		"district": "Semily",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.328241,
+				50.605258
+			]
+		}
+	},
+	{
+		"name": "Slaný",
+		"zip": 27401,
+		"district": "Kladno",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.087044,
+				50.230562
+			]
+		}
+	},
+	{
+		"name": "Šlapanice",
+		"zip": 66451,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.727418,
+				49.168729
+			]
+		}
+	},
+	{
+		"name": "Šlapanice",
+		"zip": 27372,
+		"district": "Kladno",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.111319,
+				50.314773
+			]
+		}
+	},
+	{
+		"name": "Slavkov u Brna",
+		"zip": 68401,
+		"district": "Vyškov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.876598,
+				49.153354
+			]
+		}
+	},
+	{
+		"name": "Soběslav",
+		"zip": 39201,
+		"district": "Tábor",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.718717,
+				49.260039
+			]
+		}
+	},
+	{
+		"name": "Sokolov",
+		"zip": 35601,
+		"district": "Sokolov",
+		"region": "Karlovarský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.659992,
+				50.174629
+			]
+		}
+	},
+	{
+		"name": "Šternberk",
+		"zip": 78501,
+		"district": "Olomouc",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.298995,
+				49.730542
+			]
+		}
+	},
+	{
+		"name": "Stod",
+		"zip": 33301,
+		"district": "Plzeň-jih",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.164846,
+				49.639199
+			]
+		}
+	},
+	{
+		"name": "Strakonice",
+		"zip": 38601,
+		"district": "Strakonice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.910408,
+				49.260504
+			]
+		}
+	},
+	{
+		"name": "Stříbro",
+		"zip": 34901,
+		"district": "Tachov",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.004203,
+				49.753048
+			]
+		}
+	},
+	{
+		"name": "Šumperk",
+		"zip": 78701,
+		"district": "Šumperk",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.971875,
+				49.977941
+			]
+		}
+	},
+	{
+		"name": "Sušice",
+		"zip": 75111,
+		"district": "Přerov",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.537486,
+				49.486027
+			]
+		}
+	},
+	{
+		"name": "Sušice",
+		"zip": 34201,
+		"district": "Klatovy",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.520509,
+				49.231776
+			]
+		}
+	},
+	{
+		"name": "Sušice",
+		"zip": 68704,
+		"district": "Uherské Hradiště",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.452331,
+				49.122346
+			]
+		}
+	},
+	{
+		"name": "Světlá nad Sázavou",
+		"zip": 58291,
+		"district": "Havlíčkův Brod",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.404038,
+				49.66811
+			]
+		}
+	},
+	{
+		"name": "Svitavy",
+		"zip": 56802,
+		"district": "Svitavy",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.469286,
+				49.755263
+			]
+		}
+	},
+	{
+		"name": "Tábor",
+		"zip": 39002,
+		"district": "Tábor",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.677566,
+				49.413089
+			]
+		}
+	},
+	{
+		"name": "Tachov",
+		"zip": 47201,
+		"district": "Česká Lípa",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.638554,
+				50.543414
+			]
+		}
+	},
+	{
+		"name": "Tachov",
+		"zip": 34701,
+		"district": "Tachov",
+		"region": "Plzeňský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				12.636292,
+				49.79888
+			]
+		}
+	},
+	{
+		"name": "Tanvald",
+		"zip": 46841,
+		"district": "Jablonec nad Nisou",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.307982,
+				50.737629
+			]
+		}
+	},
+	{
+		"name": "Telč",
+		"zip": 58856,
+		"district": "Jihlava",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.454373,
+				49.183338
+			]
+		}
+	},
+	{
+		"name": "Teplice",
+		"zip": 41501,
+		"district": "Teplice",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.835384,
+				50.644558
+			]
+		}
+	},
+	{
+		"name": "Tišnov",
+		"zip": 66601,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.424485,
+				49.348818
+			]
+		}
+	},
+	{
+		"name": "Třebíč",
+		"zip": 67401,
+		"district": "Třebíč",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.879652,
+				49.214887
+			]
+		}
+	},
+	{
+		"name": "Třeboň",
+		"zip": 37901,
+		"district": "Jindřichův Hradec",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.764232,
+				49.003615
+			]
+		}
+	},
+	{
+		"name": "Trhové Sviny",
+		"zip": 37401,
+		"district": "České Budějovice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.639338,
+				48.842418
+			]
+		}
+	},
+	{
+		"name": "Třinec",
+		"zip": 73961,
+		"district": "Frýdek-Místek",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.67089,
+				49.677731
+			]
+		}
+	},
+	{
+		"name": "Trutnov",
+		"zip": 54101,
+		"district": "Trutnov",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.909192,
+				50.565484
+			]
+		}
+	},
+	{
+		"name": "Turnov",
+		"zip": 51101,
+		"district": "Semily",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.156909,
+				50.587385
+			]
+		}
+	},
+	{
+		"name": "Týn nad Vltavou",
+		"zip": 37501,
+		"district": "České Budějovice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.42067,
+				49.223502
+			]
+		}
+	},
+	{
+		"name": "Uherské Hradiště",
+		"zip": 68601,
+		"district": "Uherské Hradiště",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.49595,
+				49.059897
+			]
+		}
+	},
+	{
+		"name": "Uherský Brod",
+		"zip": 68801,
+		"district": "Uherské Hradiště",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.649938,
+				49.030373
+			]
+		}
+	},
+	{
+		"name": "Uničov",
+		"zip": 78391,
+		"district": "Olomouc",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.121542,
+				49.771013
+			]
+		}
+	},
+	{
+		"name": "Ústí nad Orlicí",
+		"zip": 56201,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.399762,
+				49.97228
+			]
+		}
+	},
+	{
+		"name": "Valašské Klobouky",
+		"zip": 76601,
+		"district": "Zlín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				18.00857,
+				49.139664
+			]
+		}
+	},
+	{
+		"name": "Valašské Meziříčí",
+		"zip": 75701,
+		"district": "Vsetín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.971237,
+				49.471904
+			]
+		}
+	},
+	{
+		"name": "Varnsdorf",
+		"zip": 40747,
+		"district": "Děčín",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.618348,
+				50.911648
+			]
+		}
+	},
+	{
+		"name": "Velké Meziříčí",
+		"zip": 59401,
+		"district": "Žďár nad Sázavou",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.013158,
+				49.356189
+			]
+		}
+	},
+	{
+		"name": "Veselí nad Moravou",
+		"zip": 69801,
+		"district": "Hodonín",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.381015,
+				48.952477
+			]
+		}
+	},
+	{
+		"name": "Vimperk",
+		"zip": 38501,
+		"district": "Prachatice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.774586,
+				49.052562
+			]
+		}
+	},
+	{
+		"name": "Vítkov",
+		"zip": 74901,
+		"district": "Opava",
+		"region": "Moravskoslezský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.749517,
+				49.774549
+			]
+		}
+	},
+	{
+		"name": "Vizovice",
+		"zip": 76312,
+		"district": "Zlín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.854921,
+				49.223073
+			]
+		}
+	},
+	{
+		"name": "Vlašim",
+		"zip": 25801,
+		"district": "Benešov",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.89891,
+				49.706428
+			]
+		}
+	},
+	{
+		"name": "Vodňany",
+		"zip": 38901,
+		"district": "Strakonice",
+		"region": "Jihočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.175231,
+				49.147997
+			]
+		}
+	},
+	{
+		"name": "Votice",
+		"zip": 25901,
+		"district": "Benešov",
+		"region": "Středočeský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				14.63819,
+				49.64023
+			]
+		}
+	},
+	{
+		"name": "Vrchlabí",
+		"zip": 54301,
+		"district": "Trutnov",
+		"region": "Královéhradecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.605106,
+				50.617189
+			]
+		}
+	},
+	{
+		"name": "Vsetín",
+		"zip": 75501,
+		"district": "Vsetín",
+		"region": "Zlínský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				17.993952,
+				49.339025
+			]
+		}
+	},
+	{
+		"name": "Vyškov",
+		"zip": 68201,
+		"district": "Vyškov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.996199,
+				49.277552
+			]
+		}
+	},
+	{
+		"name": "Vysoké Mýto",
+		"zip": 56601,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.164268,
+				49.954364
+			]
+		}
+	},
+	{
+		"name": "Zábřeh",
+		"zip": 78901,
+		"district": "Šumperk",
+		"region": "Olomoucký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.872332,
+				49.8827
+			]
+		}
+	},
+	{
+		"name": "Žamberk",
+		"zip": 56401,
+		"district": "Ústí nad Orlicí",
+		"region": "Pardubický kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.465301,
+				50.087401
+			]
+		}
+	},
+	{
+		"name": "Žatec",
+		"zip": 58862,
+		"district": "Jihlava",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.509005,
+				49.206444
+			]
+		}
+	},
+	{
+		"name": "Žatec",
+		"zip": 43801,
+		"district": "Louny",
+		"region": "Ústecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				13.545886,
+				50.327276
+			]
+		}
+	},
+	{
+		"name": "Žďár nad Sázavou",
+		"zip": 59101,
+		"district": "Žďár nad Sázavou",
+		"region": "Kraj Vysočina",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.939507,
+				49.564288
+			]
+		}
+	},
+	{
+		"name": "Železný Brod",
+		"zip": 46822,
+		"district": "Jablonec nad Nisou",
+		"region": "Liberecký kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				15.254186,
+				50.64284
+			]
+		}
+	},
+	{
+		"name": "Židlochovice",
+		"zip": 66701,
+		"district": "Brno-venkov",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.618911,
+				49.039624
+			]
+		}
+	},
+	{
+		"name": "Znojmo",
+		"zip": 66902,
+		"district": "Znojmo",
+		"region": "Jihomoravský kraj",
+		"gps": {
+			"type": "Point",
+			"coordinates": [
+				16.054368,
+				48.856011
+			]
+		}
+	}
+]

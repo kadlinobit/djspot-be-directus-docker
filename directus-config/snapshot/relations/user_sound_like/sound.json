@@ -1,0 +1,25 @@
+{
+  "collection": "user_sound_like",
+  "field": "sound",
+  "meta": {
+    "junction_field": null,
+    "many_collection": "user_sound_like",
+    "many_field": "sound",
+    "one_allowed_collections": null,
+    "one_collection": "sound",
+    "one_collection_field": null,
+    "one_deselect_action": "delete",
+    "one_field": "likes",
+    "sort_field": null
+  },
+  "related_collection": "sound",
+  "schema": {
+    "column": "sound",
+    "constraint_name": "user_sound_like_sound_foreign",
+    "foreign_key_column": "id",
+    "foreign_key_table": "sound",
+    "on_delete": "CASCADE",
+    "on_update": "RESTRICT",
+    "table": "user_sound_like"
+  }
+}

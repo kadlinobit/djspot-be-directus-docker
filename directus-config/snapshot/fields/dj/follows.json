@@ -1,0 +1,30 @@
+{
+  "collection": "dj",
+  "field": "follows",
+  "meta": {
+    "collection": "dj",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "follows",
+    "group": null,
+    "hidden": false,
+    "interface": "list-o2m",
+    "note": null,
+    "options": {
+      "enableSelect": false
+    },
+    "readonly": false,
+    "required": false,
+    "searchable": true,
+    "sort": null,
+    "special": [
+      "o2m"
+    ],
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "type": "alias"
+}

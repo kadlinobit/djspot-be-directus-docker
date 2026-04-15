@@ -1,0 +1,55 @@
+{
+  "collection": "city",
+  "field": "gps",
+  "meta": {
+    "collection": "city",
+    "conditions": null,
+    "display": null,
+    "display_options": null,
+    "field": "gps",
+    "group": null,
+    "hidden": false,
+    "interface": "map",
+    "note": null,
+    "options": {
+      "defaultView": {
+        "bearing": 0,
+        "center": {
+          "lat": 5.684341886080802e-14,
+          "lng": 14.5867720977526
+        },
+        "pitch": 0,
+        "zoom": -0.3706434003783814
+      },
+      "geometryType": "Point"
+    },
+    "readonly": false,
+    "required": true,
+    "searchable": true,
+    "sort": null,
+    "special": null,
+    "translations": null,
+    "validation": null,
+    "validation_message": null,
+    "width": "full"
+  },
+  "schema": {
+    "data_type": "point",
+    "default_value": null,
+    "foreign_key_column": null,
+    "foreign_key_table": null,
+    "generation_expression": null,
+    "has_auto_increment": false,
+    "is_generated": false,
+    "is_indexed": false,
+    "is_nullable": true,
+    "is_primary_key": false,
+    "is_unique": false,
+    "max_length": null,
+    "name": "gps",
+    "numeric_precision": null,
+    "numeric_scale": null,
+    "table": "city"
+  },
+  "type": "geometry.Point"
+}
