@@ -12,7 +12,7 @@ WORKDIR /build/djspot-core
 RUN npm install && npm run build
 
 # --- Stage 2: The Final Image ---
-FROM directus/directus:11.17.1
+FROM directus/directus:11.17.2
 
 # Copy the external extension
 COPY --from=builder /build/node_modules/directus-extension-sync /directus/extensions/directus-extension-sync

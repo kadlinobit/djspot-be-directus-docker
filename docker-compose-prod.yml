@@ -2,10 +2,11 @@ services:
   directus:
     ports:
       - 8055:8055
-    image: 'directus/directus:11.17.2'
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./uploads:/directus/uploads
-      - ./extensions:/directus/extensions
       - ./snapshots:/directus/snapshots
     environment:
       - SERVICE_URL_DIRECTUS_8055
@@ -78,7 +79,7 @@ services:
     volumes:
       - ./snapshots:/directus/snapshots
       - ./directus-config:/directus/directus-config
-      - ./directus-sync.config.js:/directus/directus-sync.config.js
+      - ./directus-sync.config.cjs:/directus/directus-sync.config.cjs
     environment:
       - DB_CLIENT=pg
       - DB_HOST=database
