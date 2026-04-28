@@ -38,6 +38,15 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+      directus-init:
+        condition: service_completed_successfully
+
+  directus-init:
+    image: 'alpine:3'
+    restart: "no"
+    volumes:
+      - ./uploads:/directus/uploads
+    command: chown -R 1000:1000 /directus/uploads
 
   database:
     image: 'postgis/postgis:16-3.4'

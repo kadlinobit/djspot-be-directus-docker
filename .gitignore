@@ -4,3 +4,4 @@ mariadb_data/
 postgres_data/
 uploads/
 node_modules/
+temp/
