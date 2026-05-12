@@ -33,6 +33,16 @@
         "type": "hook",
         "name": "user-hook",
         "source": "src/hooks/user/index.ts"
+      },
+      {
+        "type": "hook",
+        "name": "sound-hook",
+        "source": "src/hooks/sound/index.ts"
+      },
+      {
+        "type": "endpoint",
+        "name": "genres",
+        "source": "src/endpoints/genres/index.ts"
       }
     ],
     "host": "^10.10.0"

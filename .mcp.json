@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Directus-local-MCP": {
+      "type": "http",
+      "url": "http://localhost:8055/mcp?access_token=VI55g9Rb3I7s4YkutKhrrKNH3MzYG-H5"
+    }
+  }
+}
