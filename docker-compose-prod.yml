@@ -10,6 +10,7 @@ services:
       - ./snapshots:/directus/snapshots
     environment:
       - SERVICE_URL_DIRECTUS_8055
+      - PUBLIC_URL=${PUBLIC_URL:-https://djspot.cz}
       - LICENSE_KEY=${DIRECTUS_LICENSE_KEY:-DMB3G-HDCHC-06DSK-QGWW5-XQTHJ}
       - KEY=${SERVICE_BASE64_64_KEY}
       - SECRET=${SERVICE_BASE64_64_SECRET}
