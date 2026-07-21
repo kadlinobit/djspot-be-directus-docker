@@ -15,7 +15,7 @@
       "defaultView": {
         "bearing": 0,
         "center": {
-          "lat": 5.684341886080802e-14,
+          "lat": 5.684341886080801e-14,
           "lng": 14.5867720977526
         },
         "pitch": 0,
@@ -34,7 +34,7 @@
     "width": "full"
   },
   "schema": {
-    "data_type": "point",
+    "data_type": "POINT",
     "default_value": null,
     "foreign_key_column": null,
     "foreign_key_table": null,

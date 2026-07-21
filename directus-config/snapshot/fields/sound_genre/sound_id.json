@@ -23,7 +23,7 @@
     "width": "full"
   },
   "schema": {
-    "data_type": "varchar",
+    "data_type": "uuid",
     "default_value": null,
     "foreign_key_column": "id",
     "foreign_key_table": "sound",
@@ -34,11 +34,11 @@
     "is_nullable": true,
     "is_primary_key": false,
     "is_unique": false,
-    "max_length": 36,
+    "max_length": null,
     "name": "sound_id",
     "numeric_precision": null,
     "numeric_scale": null,
     "table": "sound_genre"
   },
-  "type": "string"
+  "type": "uuid"
 }

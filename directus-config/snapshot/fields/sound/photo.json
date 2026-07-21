@@ -25,7 +25,7 @@
     "width": "full"
   },
   "schema": {
-    "data_type": "char",
+    "data_type": "uuid",
     "default_value": null,
     "foreign_key_column": "id",
     "foreign_key_table": "directus_files",
@@ -36,7 +36,7 @@
     "is_nullable": true,
     "is_primary_key": false,
     "is_unique": false,
-    "max_length": 36,
+    "max_length": null,
     "name": "photo",
     "numeric_precision": null,
     "numeric_scale": null,

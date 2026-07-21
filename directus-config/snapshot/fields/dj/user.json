@@ -28,7 +28,7 @@
     "width": "full"
   },
   "schema": {
-    "data_type": "varchar",
+    "data_type": "uuid",
     "default_value": null,
     "foreign_key_column": "id",
     "foreign_key_table": "directus_users",
@@ -39,11 +39,11 @@
     "is_nullable": true,
     "is_primary_key": false,
     "is_unique": false,
-    "max_length": 36,
+    "max_length": null,
     "name": "user",
     "numeric_precision": null,
     "numeric_scale": null,
     "table": "dj"
   },
-  "type": "string"
+  "type": "uuid"
 }

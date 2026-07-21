@@ -1,8 +1,10 @@
 {
   "scripts": {
     "dev": "docker compose up -d",
-    "bootstrap": "docker compose exec directus npx directus bootstrap",
-    "snap": "docker compose exec directus npx directus schema snapshot ./snapshots/latest-schema.yaml",
-    "apply": "docker compose exec directus npx directus schema apply ./snapshots/latest-schema.yaml"
+    "bootstrap": "docker compose exec directus node cli.js bootstrap",
+    "snap": "docker compose exec directus node cli.js schema snapshot ./snapshots/latest-schema.yaml",
+    "apply": "docker compose exec directus node cli.js schema apply ./snapshots/latest-schema.yaml",
+    "sync-pull": "npx directus-sync pull --config-path ./directus-sync.config.cjs",
+    "sync-push": "npx directus-sync push --config-path ./directus-sync.config.cjs"
   }
 }

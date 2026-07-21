@@ -10,6 +10,7 @@ services:
       - ./snapshots:/directus/snapshots
     environment:
       - SERVICE_URL_DIRECTUS_8055
+      - LICENSE_KEY=${DIRECTUS_LICENSE_KEY:-DMB3G-HDCHC-06DSK-QGWW5-XQTHJ}
       - KEY=${SERVICE_BASE64_64_KEY}
       - SECRET=${SERVICE_BASE64_64_SECRET}
       - ADMIN_EMAIL=${DIRECTUS_EMAIL_ADMIN:-admin@example.com}
@@ -43,7 +44,7 @@ services:
 
   directus-init:
     image: 'alpine:3'
-    restart: "no"
+    restart: 'no'
     volumes:
       - ./uploads:/directus/uploads
     command: chown -R 1000:1000 /directus/uploads
@@ -83,8 +84,10 @@ services:
       retries: 10
 
   schema-applier:
-    image: 'directus/directus:11.17.2'
-    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: 'no'
     volumes:
       - ./snapshots:/directus/snapshots
       - ./directus-config:/directus/directus-config
@@ -100,7 +103,7 @@ services:
       - ADMIN_PASSWORD=${DIRECTUS_PASSWORD_ADMIN:-pass}
     command: >
       sh -c '
-      npx directus schema apply --yes ./snapshots/latest-schema.yaml &&
+      node cli.js schema apply --yes ./snapshots/latest-schema.yaml &&
       npx -y directus-sync --directus-url http://directus:8055 --directus-email $$ADMIN_EMAIL --directus-password $$ADMIN_PASSWORD --config-path ./directus-sync.config.cjs push --force --no-snapshot
       '
     depends_on:
